@@ -842,58 +842,58 @@ void USART_Driver::SetEvent( int ComPortNum, unsigned int event )
 
 //--//
 
-STREAM_DRIVER_DETAILS* COM1_driver_details( UINT32 handle )
-{
-    static STREAM_DRIVER_DETAILS details = { 
-        DRIVER_BUFFERED_IO, 
-        &RxBuffer_Com[ RX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM1 ) ], 
-        &TxBuffer_Com[ TX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM1 ) ], 
-        RX_USART_BUFFER_SIZE, 
-        TX_USART_BUFFER_SIZE, 
-        TRUE, 
-        TRUE, 
-        FALSE 
-    };
-        
-    return &details;
-}
-
-int COM1_read( char* buffer, size_t size )
-{
-    return USART_Read( ConvertCOM_ComPort( COM1 ), buffer, size );
-}
-
-int COM1_write( char* buffer, size_t size )
-{
-    return USART_Write( ConvertCOM_ComPort( COM1 ), buffer, size );
-}
+//STREAM_DRIVER_DETAILS* COM1_driver_details( UINT32 handle )
+//{
+//    static STREAM_DRIVER_DETAILS details = { 
+//        DRIVER_BUFFERED_IO, 
+//        &RxBuffer_Com[ RX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM1 ) ], 
+//        &TxBuffer_Com[ TX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM1 ) ], 
+//        RX_USART_BUFFER_SIZE, 
+//        TX_USART_BUFFER_SIZE, 
+//        TRUE, 
+//        TRUE, 
+//        FALSE 
+//    };
+//        
+//    return &details;
+//}
+//
+//int COM1_read( char* buffer, size_t size )
+//{
+//    return USART_Read( ConvertCOM_ComPort( COM1 ), buffer, size );
+//}
+//
+//int COM1_write( char* buffer, size_t size )
+//{
+//    return USART_Write( ConvertCOM_ComPort( COM1 ), buffer, size );
+//}
 
 //--//
 
-STREAM_DRIVER_DETAILS* COM2_driver_details( UINT32 handle )
-{
-    static STREAM_DRIVER_DETAILS details = { 
-        DRIVER_BUFFERED_IO, 
-        &RxBuffer_Com[ RX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM2 ) ], 
-        &TxBuffer_Com[ TX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM2 ) ], 
-        RX_USART_BUFFER_SIZE, 
-        TX_USART_BUFFER_SIZE, 
-        TRUE, 
-        TRUE, 
-        FALSE 
-    };
-    
-    return &details;
-}
-
-int COM2_read( char* buffer, size_t size )
-{
-    return USART_Read(  ConvertCOM_ComPort( COM2 ), buffer, size );
-}
-
-int COM2_write( char* buffer, size_t size )
-{
-    return USART_Write(  ConvertCOM_ComPort( COM2 ), buffer, size );
-}
+//STREAM_DRIVER_DETAILS* COM2_driver_details( UINT32 handle )
+//{
+//    static STREAM_DRIVER_DETAILS details = { 
+//        DRIVER_BUFFERED_IO, 
+//        &RxBuffer_Com[ RX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM2 ) ], 
+//        &TxBuffer_Com[ TX_USART_BUFFER_SIZE * ConvertCOM_ComPort( COM2 ) ], 
+//        RX_USART_BUFFER_SIZE, 
+//        TX_USART_BUFFER_SIZE, 
+//        TRUE, 
+//        TRUE, 
+//        FALSE 
+//    };
+//    
+//    return &details;
+//}
+//
+//int COM2_read( char* buffer, size_t size )
+//{
+//    return USART_Read(  ConvertCOM_ComPort( COM2 ), buffer, size );
+//}
+//
+//int COM2_write( char* buffer, size_t size )
+//{
+//    return USART_Write(  ConvertCOM_ComPort( COM2 ), buffer, size );
+//}
 
 
