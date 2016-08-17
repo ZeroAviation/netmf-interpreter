@@ -213,8 +213,8 @@ extern "C"
 void __section("SectionForBootstrapOperations") STM32F7_BootstrapCode()
 {
     // assure interupts off
-// UNDONE: FIXME:    DISABLE_INTERRUPTS();
-    
+    __disable_irq();
+
     // enable FPU coprocessors (CP10, CP11)
     SCB->CPACR |= 0x3 << 2 * 10 | 0x3 << 2 * 11; // full access
 

@@ -23,15 +23,24 @@ extern UINT32 FIQ_Handler;          // the profiler NMI handler
 void CPU_INTC_Initialize()
 {
     // disable all interrupts
-    __disable_irq();
+    NVIC->ICER[0] = 0xFFFFFFFF;
+    NVIC->ICER[1] = 0xFFFFFFFF;
+    NVIC->ICER[2] = 0xFFFFFFFF;
+    NVIC->ICER[3] = 0xFFFFFFFF;
+    NVIC->ICER[4] = 0xFFFFFFFF;
+    NVIC->ICER[5] = 0xFFFFFFFF;
+    NVIC->ICER[6] = 0xFFFFFFFF;
+    NVIC->ICER[7] = 0xFFFFFFFF;
 
-    // NVIC->ICER[0] = 0xFFFFFFFF;
-    // NVIC->ICER[1] = 0xFFFFFFFF;
-    // NVIC->ICER[2] = 0xFFFFFFFF;
-    // // clear pending bits
-    // NVIC->ICPR[0] = 0xFFFFFFFF;
-    // NVIC->ICPR[1] = 0xFFFFFFFF;
-    // NVIC->ICPR[2] = 0xFFFFFFFF;
+    // clear pending bits
+    NVIC->ICPR[0] = 0xFFFFFFFF;
+    NVIC->ICPR[1] = 0xFFFFFFFF;
+    NVIC->ICPR[2] = 0xFFFFFFFF;
+    NVIC->ICPR[3] = 0xFFFFFFFF;
+    NVIC->ICPR[4] = 0xFFFFFFFF;
+    NVIC->ICPR[5] = 0xFFFFFFFF;
+    NVIC->ICPR[6] = 0xFFFFFFFF;
+    NVIC->ICPR[7] = 0xFFFFFFFF;
 
 #if !PLATFORM_ARM_OS_PORT
 #ifdef FIQ_SAMPLING_PROFILER
