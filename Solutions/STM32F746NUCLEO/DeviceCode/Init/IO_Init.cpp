@@ -12,7 +12,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <tinyhal.h>
-// #include "..\..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\stm32f7xx.h"
 #include <stm32f7xx.h>
 
 // Define the generic port table, only one generic extensionn port type supported
@@ -23,6 +22,8 @@ extern GenericPortTableEntry const* const g_GenericPorts[TOTAL_GENERIC_PORTS] = 
 
 void __section("SectionForBootstrapOperations") BootstrapCode_GPIO()
 {
-    // Enable GPIO clocks for ports A - C
-    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN | RCC_AHB1ENR_GPIOBEN | RCC_AHB1ENR_GPIOCEN;
+    // Enable GPIO clocks for ports A - G
+    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN | RCC_AHB1ENR_GPIOBEN | RCC_AHB1ENR_GPIOCEN |
+                    RCC_AHB1ENR_GPIODEN | RCC_AHB1ENR_GPIOEEN | RCC_AHB1ENR_GPIOFEN |
+                    RCC_AHB1ENR_GPIOGEN;
 }

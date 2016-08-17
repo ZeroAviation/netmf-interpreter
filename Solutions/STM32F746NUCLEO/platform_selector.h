@@ -57,11 +57,13 @@
 #define GPIO_PORTA 0
 #define GPIO_PORTB 1
 #define GPIO_PORTC 2
-// The remaining ports are not broken out - except PD2, PH0 and PH1,
-// which are deliberately omitted to reduce memory consumption (PD2)
-// and to keep the range continuous (PH0, PH1).
+#define GPIO_PORTD 3
+#define GPIO_PORTE 4
+#define GPIO_PORTF 5
+#define GPIO_PORTG 6
+// PH0 and PH1 intentionally omitted
 
-#define TOTAL_GPIO_PORT                 (GPIO_PORTC + 1)
+#define TOTAL_GPIO_PORT                 (GPIO_PORTG + 1)
 #define TOTAL_GPIO_PINS                 (TOTAL_GPIO_PORT*16)
 
 #define PORT_PIN(port,pin)              (((int)port)*16 + (pin))
