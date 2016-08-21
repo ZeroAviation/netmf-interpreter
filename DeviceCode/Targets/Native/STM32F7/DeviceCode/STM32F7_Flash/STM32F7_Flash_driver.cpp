@@ -14,6 +14,9 @@
 #include "STM32F7_Flash.h"
 #include "..\stm32f7xx.h"
 
+#ifndef FLASH
+#define FLASH               ((FLASH_TypeDef *) FLASH_R_BASE)
+#endif
 
 typedef UINT32 CHIP_WORD;
 

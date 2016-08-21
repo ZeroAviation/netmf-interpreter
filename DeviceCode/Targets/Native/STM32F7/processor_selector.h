@@ -54,7 +54,7 @@ ERROR - WE SHOULD NOT INCLUDE THIS HEADER IF NOT BUILDING AN STM32F7 PLATFORM
 /////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////
-// communicaiton facilities
+// communication facilities
 //
 
 // Port definitions
@@ -87,19 +87,19 @@ ERROR - WE SHOULD NOT INCLUDE THIS HEADER IF NOT BUILDING AN STM32F7 PLATFORM
 #define PLATFORM_DEPENDENT_USB_QUEUE_PACKET_COUNT  8    // there is one queue for each pipe of each endpoint and the size of a single packet is sizeof(USB_PACKET64) == 68 bytes
 
 //
-// communicaiton facilities
+// communication facilities
 /////////////////////////////////////////////////////////
 
 // disable conflicting and overly generic macro definitions
-//#undef FLASH
-//#undef CRC
-//#undef HASH
+#undef FLASH
+#undef CRC
+#undef HASH
 
 // CMSIS-Core SOC Specific header
-// UNDONE: FIXME: #include <STM32F7xx.h>
+#include <STM32F7xx.h>
 
 // disable conflicting and overly generic macro definitions
-//#undef FLASH
-//#undef CRC
-//#undef HASH
+#undef FLASH
+#undef CRC
+#undef HASH
 #endif
