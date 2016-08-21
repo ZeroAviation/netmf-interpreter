@@ -21,7 +21,7 @@
 
     <!-- Internal SRAM1 (240K) + SRAM2 (16K) -->
     <Set Name="IRAM_BaseAddress"        Value="0x20010000"/>
-    <Set Name="IRAM_Size"               Value="0x00030000"/>
+    <Set Name="IRAM_Size"               Value="0x00040000"/>
 
     <!-- Solution/Project specific usage settings -->
 
@@ -48,12 +48,6 @@
     <!-- Put Stack in DTCM for high speed access, reducing overhead of stack usage -->
     <Set Name="Stack_Bottom"            Value="%DTCM_BaseAddress%"/>
     <Set Name="Stack_Size"              Value="%DTCM_Size%" />
-    <!-- Internal SRAM -->
-    <!-- FIXME: Dynamically after RAM_RW region, properly aligned. -->
-    <Set Name="Heap_BaseAddress"        Value="0x20018000"/>
-    <Set Name="Heap_Size"               Value="0x00018000"/>
-
-    <Set Name="CustomHeap_Size"         Value="0x00001000"/><!--  4K -->
 
 
     <If Name="TARGETLOCATION" Value="FLASH">
@@ -98,35 +92,36 @@
             <FileMapping Name="*" Options="(VectorTable +FIRST)" />
         </ExecRegion>
 
-        <ExecRegion Name="ER_RAM_RW" Base="+0" Options="ABSOLUTE NOCOMPRESS" Size="">
+        <ExecRegion Name="ER_RAM_RO" Base="+0" Options="ABSOLUTE NOCOMPRESS" Size="0">
+            <!-- Flash programming from Flash is safe on STM32 -->
+            <!-- No need to place Flash programming code in RAM -->
+        </ExecRegion>
+
+        <ExecRegion Name="ER_CUSTOM_HEAP_BEGIN" Base="+0" Options="ABSOLUTE UNINIT" Size="0">
+            <FileMapping Name="*" Options="(SectionForCustomHeapBegin)" />
+        </ExecRegion>
+
+        <!-- Not used -->
+
+        <ExecRegion Name="ER_CUSTOM_HEAP_END" Base="+0" Options="ABSOLUTE UNINIT" Size="0">
+            <FileMapping Name="*" Options="(SectionForCustomHeapEnd)" />
+        </ExecRegion>
+
+        <!-- UNDONE: Move ER_RAM_RW to DTCM? -->
+        <ExecRegion Name="ER_RAM_RW" Base="AlignExpr(+0, 16)" Options="ABSOLUTE NOCOMPRESS" Size="">
             <FileMapping Name="*" Options="(+RW-DATA, +ZI)" />
         </ExecRegion>
 
-        <ExecRegion Name="ER_RAM_RO" Base="+0" Options="ABSOLUTE NOCOMPRESS" Size="">
-            <!-- Flash programming from Flash is safe on STM32 -->
-            <!-- No need to place Flash programming code in RAM -->
-            <!-- <FileMapping Name="*" Options="(SectionForFlashOperations)" /> -->
-        </ExecRegion>
-
-        <ExecRegion Name="ER_HEAP_BEGIN" Base="%Heap_BaseAddress%" Options="ABSOLUTE UNINIT" Size="">
+        <ExecRegion Name="ER_HEAP_BEGIN" Base="AlignExpr(+0, 16)" Options="ABSOLUTE UNINIT" Size="">
             <FileMapping Name="*" Options="(SectionForHeapBegin)" />
         </ExecRegion>
 
         <!-- everything between heapbegin and heapend will be allocated for a heap -->
 
-        <ExecRegion Name="ER_HEAP_END" Base="+%Heap_Size%" Options="ABSOLUTE UNINIT" Size="">
+        <ExecRegion Name="ER_HEAP_END" Base="AlignExpr(%IRAM_BaseAddress% + %IRAM_Size% -8, 8)" Options="ABSOLUTE UNINIT" Size="">
             <FileMapping Name="*" Options="(SectionForHeapEnd)" />
         </ExecRegion>
 
-        <ExecRegion Name="ER_CUSTOM_HEAP_BEGIN" Base="+0" Options="ABSOLUTE UNINIT" Size="">
-            <FileMapping Name="*" Options="(SectionForCustomHeapBegin)" />
-        </ExecRegion>
-
-        <!-- everything between heapbegin and heapend will be allocated for the unmanaged SimpleHeap -->
-
-        <ExecRegion Name="ER_CUSTOM_HEAP_END" Base="+%CustomHeap_Size%" Options="ABSOLUTE UNINIT" Size="">
-            <FileMapping Name="*" Options="(SectionForCustomHeapEnd)" />
-        </ExecRegion>
 
         <!-- ========= Internal DTCM ============================================ -->
         <ExecRegion Name="ER_STACK_BOTTOM" Base="%Stack_Bottom%" Options="ABSOLUTE UNINIT" Size="">

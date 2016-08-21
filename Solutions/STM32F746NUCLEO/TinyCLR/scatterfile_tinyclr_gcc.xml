@@ -21,7 +21,7 @@
 
     <!-- Internal SRAM1 (240K) + SRAM2 (16K) -->
     <Set Name="IRAM_BaseAddress"        Value="0x20010000"/>
-    <Set Name="IRAM_Size"               Value="0x00030000"/>
+    <Set Name="IRAM_Size"               Value="0x00040000"/>
 
     <!-- Solution/Project specific usage settings -->
 
@@ -48,12 +48,6 @@
     <!-- Put Stack in DTCM for high speed access, reducing overhead of stack usage -->
     <Set Name="Stack_Bottom"            Value="%DTCM_BaseAddress%"/>
     <Set Name="Stack_Size"              Value="%DTCM_Size%" />
-    <!-- Internal SRAM -->
-    <!-- FIXME: Dynamically after RAM_RW region, properly aligned. -->
-    <Set Name="Heap_BaseAddress"        Value="0x20018000"/>
-    <Set Name="Heap_Size"               Value="0x00018000"/>
-
-    <Set Name="CustomHeap_Size"         Value="0x00001000"/><!--  4K -->
 
 
     <If Name="TARGETLOCATION" Value="FLASH">
@@ -106,12 +100,12 @@
             <FileMapping Name="*" Options="(VectorTable)" />
         </ExecRegion>
 
-        <ExecRegion Name="ER_RAM_RW" Align="0x10" Base="ADDR(ER_VECTORS) + SIZEOF(ER_VECTORS)" Options="&gt;IRAM AT&gt;LR_FLASH ">
+        <ExecRegion Name="ER_RAM_RW" Align="8" Base="ADDR(ER_VECTORS) + SIZEOF(ER_VECTORS)" Options="&gt;IRAM AT&gt;LR_FLASH ">
             <FileMapping Name="*" Options="(rwdata)" />
             <FileMapping Name="*" Options="(.data*)" />
         </ExecRegion>
 
-        <ExecRegion Name=".bss" Align="0x10" Base="(NOLOAD)" Options="&gt;IRAM">
+        <ExecRegion Name=".bss" Align="8" Base="(NOLOAD)" Options="&gt;IRAM">
             <FileMapping Name="*" Options="(.bss*)" />
             <FileMapping Name="*" Options="(.zidata*)" />
             <FileMapping Name="PROVIDE(__exidx_start = .);" />
@@ -125,25 +119,26 @@
             <!-- <FileMapping Name="*" Options="(SectionForFlashOperations)" /> -->
         </ExecRegion>
 
-        <ExecRegion Name="ER_HEAP_BEGIN" Base="%Heap_BaseAddress%" Options="&gt;IRAM">
+        <ExecRegion Name="ER_CUSTOM_HEAP_BEGIN" Options="&gt;IRAM" >
+            <FileMapping Name="*" Options="(SectionForCustomHeapBegin)" />
+        </ExecRegion>
+
+        <!-- Not used -->
+
+        <ExecRegion Name="ER_CUSTOM_HEAP_END" Base="ADDR(ER_CUSTOM_HEAP_BEGIN)" Options="&gt;IRAM" >
+            <FileMapping Name="*" Options="(SectionForCustomHeapEnd)" />
+        </ExecRegion>
+
+        <ExecRegion Name="ER_HEAP_BEGIN" Align="8" Base="." Options="&gt;IRAM">
             <FileMapping Name="*" Options="(SectionForHeapBegin)" />
         </ExecRegion>
 
         <!-- everything between heapbegin and heapend will be allocated for a heap -->
 
-        <ExecRegion Name="ER_HEAP_END" Base="ADDR(ER_HEAP_BEGIN) + %Heap_Size%" Options="&gt;IRAM" >
+        <ExecRegion Name="ER_HEAP_END" Base="%IRAM_BaseAddress% + %IRAM_Size% - 8" Options="&gt;IRAM" >
             <FileMapping Name="*" Options="(SectionForHeapEnd)" />
         </ExecRegion>
 
-        <ExecRegion Name="ER_CUSTOM_HEAP_BEGIN" Options="&gt;IRAM" >
-            <FileMapping Name="*" Options="(SectionForCustomHeapBegin)" />
-        </ExecRegion>
-
-        <!-- everything between heapbegin and heapend will be allocated for the unmanaged SimpleHeap -->
-
-        <ExecRegion Name="ER_CUSTOM_HEAP_END" Base="ADDR(ER_CUSTOM_HEAP_BEGIN) + %CustomHeap_Size%" Options="&gt;IRAM" >
-            <FileMapping Name="*" Options="(SectionForCustomHeapEnd)" />
-        </ExecRegion>
 
       <ExecRegion Name="/DISCARD/">
         <FileMapping Name="*" Options="(.ARM.exidx*)" />
