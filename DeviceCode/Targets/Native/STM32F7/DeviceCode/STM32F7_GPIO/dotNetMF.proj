@@ -27,15 +27,14 @@
       </MFComponent>
     </LibraryCategory>
     <ProcessorSpecific>
-      <MFComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="STM32F7" Guid="{007400A6-0088-008A-A158-3C166CD3322C}" xmlns="">
+      <MFComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="STM32F7" Guid="{CCB2FE36-4395-45C8-8CCA-7277ABEA4177}" xmlns="">
         <VersionDependency xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">
           <Major>4</Major>
           <Minor>0</Minor>
           <Revision>0</Revision>
           <Build>0</Build>
-          <Extra />
-          <Date>2009-04-30</Date>
-          <Author>Oberon microsystems, Inc.</Author>
+          <Date>2016-08-16</Date>
+          <Author>CW2</Author>
         </VersionDependency>
         <ComponentType xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">Processor</ComponentType>
       </MFComponent>
