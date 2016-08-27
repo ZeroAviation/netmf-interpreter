@@ -80,7 +80,7 @@
 #define DEBUGGER_PORT                   USB1
 #define MESSAGING_PORT                  USB1
 
-#define USART_DEFAULT_PORT              COM1
+#define USART_DEFAULT_PORT              COM3
 #define USART_DEFAULT_BAUDRATE          115200
 
 // System Timer Configuration
@@ -104,15 +104,14 @@
 
 #define PORT_PIN(port,pin)              (((int)port)*16 + (pin))
 #define _P(port, pin)                   PORT_PIN(GPIO_PORT##port, pin)
-#define _P_NONE_                        GPION_PIN_NONE
+#define _P_NONE_                        GPIO_PIN_NONE
 
 // Serial
-#define TOTAL_USART_PORT                1
-
-//                                         "COM1"
-//                                         USART3
-#define STM32F7_UART_TXD_PINS           { _P(D, 8) }
-#define STM32F7_UART_RXD_PINS           { _P(D, 9) }
+#define TOTAL_USART_PORT                3
+//                                         "COM1"    "COM2"    "COM3"
+//                                         USART1    USART2    USART3
+#define STM32F7_UART_TXD_PINS           { _P_NONE_, _P_NONE_, _P(D, 8) }
+#define STM32F7_UART_RXD_PINS           { _P_NONE_, _P_NONE_, _P(D, 9) }
 
 // USART1 cannot be used: USART1_RX on PA10 conflicts with USB, PB7 conflicts with LED2
 // USART3 is connected to ST-LINK (PD8, PD9) and available as a virtual COM port
