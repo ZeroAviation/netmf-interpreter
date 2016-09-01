@@ -264,9 +264,6 @@ void __section("SectionForBootstrapOperations") STM32F7_BootstrapCode()
     RCC->CR &= ~RCC_CR_HSION;
 #endif
 
-    // remove Flash remap to Boot area to avoid problems with Monitor_Execute
-    SYSCFG->MEMRMP = 1; // map System memory to Boot area
-
 //#ifdef STM32F4_Enable_RTC
 //    STM32F4_RTC_Initialize(); // enable RTC
 //#endif
