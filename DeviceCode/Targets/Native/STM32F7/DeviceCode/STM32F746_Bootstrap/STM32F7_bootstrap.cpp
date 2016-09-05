@@ -219,6 +219,26 @@ void __section("SectionForBootstrapOperations") STM32F7_BootstrapCode()
     // assure interupts off
     __disable_irq();
 
+    //
+    // L1 caches
+    //
+    // UNDONE: Move to CPU cache library, i.e. inside CPU_CACHE_Enable(). But, the API
+    // currently does not support cache type parameter and is not called from anywhere.
+    //
+    // UNDONE: Optional configuration, e.g. #ifdef STM32F7_ENABLE_DCACHE or similar.
+    //
+    // UNDONE: Cache configuration based on flash memory interfaces (AN4667):
+    // If the access to the Flash memory is done via AXI/AHB (address 0x08000000),
+    // instruction and/or data caches should be enabled.
+    // If the access to the Flash memory is done via ITCM bus (address 0x02000000),
+    // the ART accelerator should be enabled (along with ART-Prefetch).
+    //
+
+    SCB_EnableICache(); // Invalidate and enable L1 Instruction cache
+
+    SCB_EnableDCache(); // Invalidate and enable L1 Data cache
+
+
     // enable FPU coprocessors (CP10, CP11)
     SCB->CPACR |= 0x3 << 2 * 10 | 0x3 << 2 * 11; // full access
 
