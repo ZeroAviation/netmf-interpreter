@@ -42,10 +42,10 @@
 //
 
 // System Clock
-#define SYSTEM_CLOCK_HZ                  192000000  // 192 MHz
-#define SYSTEM_CYCLE_CLOCK_HZ            192000000  // 192 MHz
-#define SYSTEM_APB1_CLOCK_HZ              48000000  //  48 MHz
-#define SYSTEM_APB2_CLOCK_HZ              96000000  //  96 MHz
+#define SYSTEM_CLOCK_HZ                  216000000  // 216 MHz
+#define SYSTEM_CYCLE_CLOCK_HZ            216000000  // 216 MHz
+#define SYSTEM_APB1_CLOCK_HZ              54000000  //  54 MHz
+#define SYSTEM_APB2_CLOCK_HZ             108000000  // 108 MHz
 
 // FIXME: HSEBYP is not currently supported
 #define SYSTEM_CRYSTAL_CLOCK_HZ            8000000  // 8 MHz external clock (MCO from ST-LINK)
