@@ -31,6 +31,9 @@ selection.
 > _Note: Certain peripheral configurations are not possible due to limitations
 > of the NETMF or because they are not yet implemented in the STM32F7 port drivers._
 
+The configuration options are set in [platform_selector.h](./platform_selector.h)
+via C++ language `#define` directives.
+
 ### System clock
 
 The external high-speed clock (HSE) input PH0/OSC_IN is connected to ST-LINK MCO
@@ -40,6 +43,13 @@ used the highest two allowed frequencies are 192 MHz and 216 MHz (max).
 
 The peripheral bus clocks frequencies are configured to maximum values using
 '/4' and '/2' prescaler for APB1 and ABP2 respectively.
+
+### NETMF clock
+
+The NETMF clock frequency is set to 1 MHz, which results in 1 µs resolution.
+
+> _Note: This clock is also known as the 'Slow clock'. Not to be confused with
+> the hardware real-time clock (RTC)._
 
 ## Resources
 
