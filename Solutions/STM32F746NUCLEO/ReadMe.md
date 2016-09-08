@@ -31,6 +31,16 @@ selection.
 > _Note: Certain peripheral configurations are not possible due to limitations
 > of the NETMF or because they are not yet implemented in the STM32F7 port drivers._
 
+### System clock
+
+The external high-speed clock (HSE) input PH0/OSC_IN is connected to ST-LINK MCO
+output, which is fixed at 8 MHz. The value of the system clock frequency is limited
+by the use of USB peripheral, which requires 48 MHz (±0.25%). Thus, when USB is
+used the highest two allowed frequencies are 192 MHz and 216 MHz (max).
+
+The peripheral bus clocks frequencies are configured to maximum values using
+'/4' and '/2' prescaler for APB1 and ABP2 respectively.
+
 ## Resources
 
 * [NUCLEO-F746ZG - STMicroelectronics](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f746zg.html)
