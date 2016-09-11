@@ -51,6 +51,29 @@ The NETMF clock frequency is set to 1 MHz, which results in 1 µs resolution.
 > _Note: This clock is also known as the 'Slow clock'. Not to be confused with
 > the hardware real-time clock (RTC)._
 
+## Diagnostics and Troubleshooting
+
+Both debugging communication channels are configured to use the integrated
+[Instrumentation Trace Macrocell (ITM)](http://infocenter.arm.com/help/topic/com.arm.doc.ddi0489d/BIICGJAF.html)
+unit and generate output via ITM stimulus register 0.
+```C++
+#define DEBUG_TEXT_PORT                 ITM0
+#define STDIO                           ITM0
+```
+The ITM output is delivered through the onboard ST-LINK/V2-1 debugger and can be
+easily viewed in [STM32 ST-LINK utility](http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html)
+application. For detailed instructions please refer to [UM0892 (PDF)](www.st.com/resource/en/user_manual/cd00262073.pdf)
+section _3.10 Printf via SWO viewer_.
+
+> _Note: `DEBUG_TEXT_PORT` is communication channel for debug messages in the debugger
+> and is accessed via `debug_printf()` function in the HAL/PAL and `System.Diagnostic.Debug.Print()`
+> method in managed code._
+>
+> _`STDIO` is an internal HAL/PAL debug and tracing channel accessed via `hal_printf()`
+> function and allows messages in the Debugger and DebugTextPort transports drivers._
+
+- [ ] TODO: Move the above note to the official documentation (and link there).
+
 ## Resources
 
 * [NUCLEO-F746ZG - STMicroelectronics](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f746zg.html)
@@ -68,3 +91,9 @@ The NETMF clock frequency is set to 1 MHz, which results in 1 µs resolution.
 
 * [LAN8742A Ethernet PHY](http://www.microchip.com/wwwproducts/en/LAN8742A)
   * [LAN8742A/LAN8742Ai Data Sheet (PDF)](http://ww1.microchip.com/downloads/en/DeviceDoc/DS_LAN8742_00001989A.pdf)
+
+### Tools
+
+* [STM32 ST-Link utility](http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html)
+  * [UM0892 - STM32 ST-LINK utility software description (PDF)](www.st.com/resource/en/user_manual/cd00262073.pdf)
+* [STM32CubeMX](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html)
