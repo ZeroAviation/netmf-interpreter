@@ -19,7 +19,7 @@ The Nucleo-144 board has numerous solder bridges (SBxx/SB1xx on top/bottom layer
 which are used to configure I/O pinout and various onboard features. Factory default
 settings are assumed as described in the User Manual section 6.12.
 
-[STM32F746NUCLEO.ioc](./STM32F746NUCLEO.ioc) is a baseline project file for [STM32CubeMX](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html)
+[STM32F746NUCLEO.ioc](STM32F746NUCLEO.ioc) is a baseline project file for [STM32CubeMX](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html)
 software configuration tool that allows configuring the required set of peripherals
 via a graphical interface, with automatic conflict detection and alternate pin mapping
 selection.
@@ -31,7 +31,7 @@ selection.
 > _Note: Certain peripheral configurations are not possible due to limitations
 > of the NETMF or because they are not yet implemented in the STM32F7 port drivers._
 
-The configuration options are set in [platform_selector.h](./platform_selector.h)
+The configuration options are set in [platform_selector.h](platform_selector.h)
 via C++ language `#define` directives.
 
 ### System clock
