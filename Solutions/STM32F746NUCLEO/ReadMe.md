@@ -1,6 +1,7 @@
 # STM32F746NUCLEO Solution
 
-This is a sample solution for STMicroelectronics NUCLEO-F746ZG board.
+This is a sample solution for STMicroelectronics [NUCLEO-F746ZG](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f746zg.html)
+board.
 
 ## Features
 
@@ -62,18 +63,9 @@ unit and generate output via ITM stimulus register 0.
 ```
 The ITM output is delivered through the onboard ST-LINK/V2-1 debugger and can be
 easily viewed in [STM32 ST-LINK utility](http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html)
-application. For detailed instructions please refer to [UM0892 (PDF)](http://www.st.com/resource/en/user_manual/cd00262073.pdf)
-section _3.10 Printf via SWO viewer_.
-
-> _Note: `DEBUG_TEXT_PORT` is communication channel for debug messages in the debugger
-> and is accessed via `debug_printf()` function in the HAL/PAL and `System.Diagnostic.Debug.Print()`
-> method in managed code._
->
-> _`STDIO` is an internal HAL/PAL debug and tracing channel accessed via `hal_printf()`
-> function and allows messages in the Debugger and DebugTextPort transport drivers._
-
-- [ ] TODO: Move the above note to the official documentation (and link there)
-- [ ] TODO: Document COMx transport, COM3 via Virtual USB COM device (+ MFDeploy)
+application. For more detailed instructions and alternate transport configuration
+please refer to [Diagnostics and Troubleshooting](https://github.com/NETMF/netmf-interpreter/wiki/Diagnostics-and-Troubleshooting)
+topic on the NETMF wiki.
 
 ## Resources
 
