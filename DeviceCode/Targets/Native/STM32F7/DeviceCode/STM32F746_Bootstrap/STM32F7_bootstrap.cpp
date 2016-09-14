@@ -236,7 +236,8 @@ void __section("SectionForBootstrapOperations") STM32F7_BootstrapCode()
 
     SCB_EnableICache(); // Invalidate and enable L1 Instruction cache
 
-    SCB_EnableDCache(); // Invalidate and enable L1 Data cache
+    // UNDONE: FIXME: D-Cache temporarily disabled, as it causes problems with setting interrupt vectors (located in cache-able RAM)
+    //SCB_EnableDCache(); // Invalidate and enable L1 Data cache
 
 
     // enable FPU coprocessors (CP10, CP11)
