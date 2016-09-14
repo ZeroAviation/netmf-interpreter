@@ -62,7 +62,7 @@ unit and generate output via ITM stimulus register 0.
 ```
 The ITM output is delivered through the onboard ST-LINK/V2-1 debugger and can be
 easily viewed in [STM32 ST-LINK utility](http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html)
-application. For detailed instructions please refer to [UM0892 (PDF)](www.st.com/resource/en/user_manual/cd00262073.pdf)
+application. For detailed instructions please refer to [UM0892 (PDF)](http://www.st.com/resource/en/user_manual/cd00262073.pdf)
 section _3.10 Printf via SWO viewer_.
 
 > _Note: `DEBUG_TEXT_PORT` is communication channel for debug messages in the debugger
@@ -70,7 +70,7 @@ section _3.10 Printf via SWO viewer_.
 > method in managed code._
 >
 > _`STDIO` is an internal HAL/PAL debug and tracing channel accessed via `hal_printf()`
-> function and allows messages in the Debugger and DebugTextPort transports drivers._
+> function and allows messages in the Debugger and DebugTextPort transport drivers._
 
 - [ ] TODO: Move the above note to the official documentation (and link there)
 - [ ] TODO: Document COMx transport, COM3 via Virtual USB COM device (+ MFDeploy)
@@ -96,5 +96,5 @@ section _3.10 Printf via SWO viewer_.
 ### Tools
 
 * [STM32 ST-Link utility](http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html)
-  * [UM0892 - STM32 ST-LINK utility software description (PDF)](www.st.com/resource/en/user_manual/cd00262073.pdf)
+  * [UM0892 - STM32 ST-LINK utility software description (PDF)](http://www.st.com/resource/en/user_manual/cd00262073.pdf)
 * [STM32CubeMX](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html)
