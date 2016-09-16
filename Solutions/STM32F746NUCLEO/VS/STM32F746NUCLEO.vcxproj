@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ApplicationType>LinuxDebugger</ApplicationType>
+    <SecureShellExecutable>ssh</SecureShellExecutable>
+    <RemoteDebuggerExecutable>gdb</RemoteDebuggerExecutable>
+    <LocalDebuggerExecutable>gdb</LocalDebuggerExecutable>
+    <OCDDebuggerServerAddress>localhost:3333</OCDDebuggerServerAddress>
+    <Keyword>IoT</Keyword>
+    <ProjectGuid>{0F62A3CE-4E63-4072-82AC-013DBD66244D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\BuildEnv.props" />
+    <Import Project="..\..\..\std_vcxproj.props" />
+    <Import Project="build.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\BuildEnv.props" />
+    <Import Project="..\..\..\std_vcxproj.props" />
+    <Import Project="build.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <None Include="..\..\..\Application\dotNetMF.proj" />
+    <None Include="..\..\..\Application\TinyBooter\dotNetMF.proj" />
+    <None Include="..\..\..\Application\TinyBooter\TinyBooterDecompressorLib.proj" />
+    <None Include="..\..\..\Application\TinyBooter\TinyBooterLib.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S\DefaultHandlers.s" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S\VectorTable.s" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S\DefaultHandlers.s" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S\VectorTable.s" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\dotNetMF.proj" />
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\STM32F7.settings" />
+    <None Include="..\..\..\Support\crc\crc.vcproj" />
+    <None Include="..\..\..\Support\crc\dotNetMF.proj" />
+    <None Include="..\..\..\Support\CreateMfPkVersionProj.proj" />
+    <None Include="..\..\..\Support\CreateReleaseInfo.proj" />
+    <None Include="..\..\..\Support\dotNetMF.proj" />
+    <None Include="..\..\..\Support\frameworkbase\dotNetMF.proj" />
+    <None Include="..\..\..\Support\frameworkbase\dotNetMF.proj.port" />
+    <None Include="..\..\..\Support\GenerateFrameworkList.proj" />
+    <None Include="..\..\..\Support\Include\dotNetMF.proj" />
+    <None Include="..\..\..\Support\Include\Support_Include.vcproj" />
+    <None Include="..\..\..\Support\WireProtocol\dotNetMF.proj" />
+    <None Include="..\..\..\Support\WireProtocol\WireProtocol.vcproj" />
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.gcc.settings" />
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.gcc.targets" />
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.settings" />
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.targets" />
+    <None Include="..\DeviceCode\Blockstorage\addDevices\dotNetMF.proj" />
+    <None Include="..\DeviceCode\Blockstorage\dotNetMF.proj" />
+    <None Include="..\DeviceCode\Blockstorage\STM32F7\dotNetMF.proj" />
+    <None Include="..\DeviceCode\Initialization\dotNetMF.proj" />
+    <None Include="..\DeviceCode\Initialization\dotNetMF_loader.proj" />
+    <None Include="..\DeviceCode\Init\dotNetMF.proj" />
+    <None Include="..\DeviceCode\USB\dotNetMF.proj" />
+    <None Include="..\dotnetmf.proj" />
+    <None Include="..\ManagedCode\dotnetmf.proj" />
+    <None Include="..\ManagedCode\Hardware\CPU.cs" />
+    <None Include="..\ManagedCode\Hardware\STM32F746NUCLEO_hardware.csproj" />
+    <None Include="..\ReadMe.md" />
+    <None Include="..\STM32F746NUCLEO.ioc" />
+    <None Include="..\STM32F746NUCLEO.settings" />
+    <None Include="Assets\LinuxDebugger.xaml" />
+    <None Include="Assets\LocalDebugger.xaml" />
+    <None Include="Assets\OCDDebugger.xaml" />
+    <None Include="Assets\linux_nmake.xaml" />
+  </ItemGroup>
+  <!--Import Project="$(MSBuildThisFileDirectory)\Microsoft.cpp.Linux.targets" /-->
+  <!-- To Enable linux debugger -->
+  <PropertyGroup>
+    <UseDefaultDebuggersPropertyPageSchemas>false</UseDefaultDebuggersPropertyPageSchemas>
+    <UseDefaultPropertyPageSchemas>false</UseDefaultPropertyPageSchemas>
+    <_ApplicableDebuggers>Desktop</_ApplicableDebuggers>
+    <DebuggerFlavor>LinuxDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\ProjectItemsSchema.xml" />
+    <PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\directories.xml" />
+    <PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\debugger_general.xml" />
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\Assets\LinuxDebugger.xaml" />
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\Assets\LocalDebugger.xaml" />
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\Assets\OCDDebugger.xaml" />
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\Assets\linux_nmake.xaml" />
+    <!-- project only rules -->
+    <PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\general_makefile.xml">
+      <Context>Project</Context>
+    </PropertyPageSchema>
+    <!-- Property sheet only rules -->
+    <PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\general_makefile_ps.xml;$(VCTargetsPath)$(LangID)\usermacros.xml">
+      <Context>PropertySheet</Context>
+    </PropertyPageSchema>
+    <!-- File only rules -->
+    <PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\general_file.xml">
+      <Context>File</Context>
+    </PropertyPageSchema>
+  </ItemGroup>
+  <ItemGroup>
+    <DesktopDebuggerPages Include="$(MSBuildThisFileDirectory)\Assets\LinuxDebugger.xaml" />
+    <DesktopDebuggerPages Include="$(MSBuildThisFileDirectory)\Assets\LocalDebugger.xaml" />
+    <DesktopDebuggerPages Include="$(MSBuildThisFileDirectory)\Assets\OCDDebugger.xaml" />
+    <DesktopDebuggerPages Include="$(MSBuildThisFileDirectory)\Assets\linux_nmake.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="Linux" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Application\TinyBooter\Commands.cpp" />
+    <ClCompile Include="..\..\..\Application\TinyBooter\ConfigurationManager.cpp" />
+    <ClCompile Include="..\..\..\Application\TinyBooter\CryptoInterface.cpp" />
+    <ClCompile Include="..\..\..\Application\TinyBooter\TinyBooter.cpp" />
+    <ClCompile Include="..\..\..\Application\TinyBooter\TinyBooterDecompressor.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\STM32F7_bootstrap.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\STM32F7_Flash_driver.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO\STM32F7_GPIO_functions.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC\STM32F7_intc_functions.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort\ItmPort.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\STM32F7_Power_functions.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time\STM32F7_time_functions.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART\STM32F7_usart_functions.cpp" />
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\STM32F7_usb_functions.cpp" />
+    <ClCompile Include="..\..\..\Support\crc\CRC.cpp" />
+    <ClCompile Include="..\..\..\Support\crc\stdafx.cpp" />
+    <ClCompile Include="..\..\..\Support\WireProtocol\Compression.cpp" />
+    <ClCompile Include="..\..\..\Support\WireProtocol\stdafx.cpp" />
+    <ClCompile Include="..\..\..\Support\WireProtocol\WireProtocol.cpp" />
+    <ClCompile Include="..\DeviceCode\Blockstorage\addDevices\Bl_addDevices.cpp" />
+    <ClCompile Include="..\DeviceCode\Blockstorage\STM32F7\STM32F7_BlConfig.cpp" />
+    <ClCompile Include="..\DeviceCode\Initialization\OEM_Model_SKU_NetworkID.cpp" />
+    <ClCompile Include="..\DeviceCode\Initialization\SystemState.cpp" />
+    <ClCompile Include="..\DeviceCode\Initialization\tinyhal.cpp" />
+    <ClCompile Include="..\DeviceCode\Init\IO_Init.cpp" />
+    <ClCompile Include="..\DeviceCode\USB\usb_config.cpp" />
+    <ClCompile Include="..\TinyBooter\allocator.cpp" />
+    <ClCompile Include="..\TinyBooter\TinyBooterEntry.cpp" />
+    <ClCompile Include="..\TinyCLR\allocator.cpp" />
+    <ClCompile Include="..\TinyCLR\tinyclr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Application\TinyBooter\Commands.h" />
+    <ClInclude Include="..\..\..\Application\TinyBooter\ConfigurationManager.h" />
+    <ClInclude Include="..\..\..\Application\TinyBooter\CryptoInterface.h" />
+    <ClInclude Include="..\..\..\Application\TinyBooter\Keys.h" />
+    <ClInclude Include="..\..\..\Application\TinyBooter\TinyBooter.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\AnalogOut_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Analog_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\AsyncProcCalls_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Backlight_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\BatteryCharger_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\BatteryMeasurement_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\BlockStorage_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\COM_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_BOOT_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_CACHE_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_CMU_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_DMA_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_EBIU_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_GPIO_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_INTC_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_MMU_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_PCU_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_SPI_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_WATCHDOG_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Display_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Double_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\drivers.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\events_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\FS_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Gesture_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\GPIO_button_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\graphics_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Heap_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\I2C_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Ink_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\instrumentation_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\io_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\LargeBuffer_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\MFUpdate_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\MicroBooter_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\netmf_errors.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Network_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\OSIrqLock.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\palevent_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\PerformanceCounters_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Piezo_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\power_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\PWM_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\SD_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Security_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\SmartPtr_irq.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Sockets_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\StateDebounce_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\tests.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\TimeService_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\Time_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\TinyBooterEntry.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\TinyCLR_Endian.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\tinycrt_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal_releaseinfo.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal_types.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\tinypal.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\TouchPanel_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\USART_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\USB_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\include\VirtualKey_decl.h" />
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\stm32f746xx.h" />
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\stm32f7xx.h" />
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\STM32F7_Flash.h" />
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\STM32F7_Power_functions.h" />
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\usb_def.h" />
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\system_stm32f7xx.h" />
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\processor_selector.h" />
+    <ClInclude Include="..\..\..\Support\crc\stdafx.h" />
+    <ClInclude Include="..\..\..\Support\Include\TinySupport.h" />
+    <ClInclude Include="..\..\..\Support\Include\WireProtocol.h" />
+    <ClInclude Include="..\..\..\Support\WireProtocol\stdafx.h" />
+    <ClInclude Include="..\DeviceCode\Initialization\MasterConfig.h" />
+    <ClInclude Include="..\platform_selector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\scatterfile_gcc_missing_symbols.xml" />
+    <Xml Include="..\TinyBooter\scatterfile_bootloader_gcc.xml" />
+    <Xml Include="..\TinyBooter\scatterfile_bootloader_mdk.xml" />
+    <Xml Include="..\TinyCLR\scatterfile_tinyclr_gcc.xml" />
+    <Xml Include="..\TinyCLR\scatterfile_tinyclr_mdk.xml" />
+  </ItemGroup>
+  <!-- To Enable linux debugger End -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <NMakeBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR)"</NMakeBuildCommandLine>
+    <OutDir>$(BUILD_ROOT_BASE)\</OutDir>
+    <IntDir>$(BUILD_ROOT_BASE)\</IntDir>
+    <NMakeCleanCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Clean"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Rebuild"</NMakeReBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <NMakeBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Clean"</NMakeCleanCommandLine>
+    <OutDir>$(BUILD_ROOT_BASE)\</OutDir>
+    <IntDir>$(BUILD_ROOT_BASE)\</IntDir>
+    <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Rebuild"</NMakeReBuildCommandLine>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
