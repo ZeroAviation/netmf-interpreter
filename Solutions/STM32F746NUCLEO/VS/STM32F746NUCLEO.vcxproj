@@ -468,6 +468,7 @@
     <None Include="build.props" />
     <None Include="build.props.user" />
     <None Include="build.props.user-example" />
+    <None Include="netmf_stm32f746nucleo.cfg" />
     <None Include="ReadMe.md" />
   </ItemGroup>
   <!--Import Project="$(MSBuildThisFileDirectory)\Microsoft.cpp.Linux.targets" /-->

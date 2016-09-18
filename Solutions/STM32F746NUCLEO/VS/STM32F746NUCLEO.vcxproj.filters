@@ -1225,6 +1225,9 @@
     <None Include="ReadMe.md">
       <Filter>Solutions\STM32F746NUCLEO\VS</Filter>
     </None>
+    <None Include="netmf_stm32f746nucleo.cfg">
+      <Filter>Solutions\STM32F746NUCLEO\VS</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Application">
