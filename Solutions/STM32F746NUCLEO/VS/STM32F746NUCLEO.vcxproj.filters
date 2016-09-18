@@ -1,17 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <None Include="Assets\linux_nmake.xaml">
-      <Filter>Assets</Filter>
-    </None>
-    <None Include="Assets\LinuxDebugger.xaml">
-      <Filter>Assets</Filter>
-    </None>
-    <None Include="Assets\LocalDebugger.xaml">
-      <Filter>Assets</Filter>
-    </None>
-    <None Include="Assets\OCDDebugger.xaml">
-      <Filter>Assets</Filter>
+    <None Include="..\..\..\Application\dotNetMF.proj">
+      <Filter>Application</Filter>
     </None>
     <None Include="..\..\..\Application\TinyBooter\dotNetMF.proj">
       <Filter>Application\TinyBooter</Filter>
@@ -22,157 +13,10 @@
     <None Include="..\..\..\Application\TinyBooter\TinyBooterLib.proj">
       <Filter>Application\TinyBooter</Filter>
     </None>
-    <None Include="..\..\..\Application\dotNetMF.proj">
-      <Filter>Application</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\STM32F7.settings">
-      <Filter>DeviceCode\Targets\Native\STM32F7</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S\DefaultHandlers.s">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S\VectorTable.s">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S\DefaultHandlers.s">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S\VectorTable.s">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S</Filter>
-    </None>
-    <None Include="..\DeviceCode\Blockstorage\dotNetMF.proj">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage</Filter>
-    </None>
-    <None Include="..\DeviceCode\Blockstorage\addDevices\dotNetMF.proj">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\AddDevices</Filter>
-    </None>
-    <None Include="..\DeviceCode\Blockstorage\STM32F7\dotNetMF.proj">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\STM32F7</Filter>
-    </None>
-    <None Include="..\DeviceCode\Init\dotNetMF.proj">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Init</Filter>
-    </None>
-    <None Include="..\DeviceCode\Initialization\dotNetMF.proj">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
-    </None>
-    <None Include="..\DeviceCode\Initialization\dotNetMF_loader.proj">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
-    </None>
-    <None Include="..\DeviceCode\USB\dotNetMF.proj">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\USB</Filter>
-    </None>
-    <None Include="..\ManagedCode\dotnetmf.proj">
-      <Filter>Solutions\STM32F746NUCLEO\ManagedCode</Filter>
-    </None>
-    <None Include="..\ManagedCode\Hardware\CPU.cs">
-      <Filter>Solutions\STM32F746NUCLEO\ManagedCode\Hardware</Filter>
-    </None>
-    <None Include="..\ManagedCode\Hardware\STM32F746NUCLEO_hardware.csproj">
-      <Filter>Solutions\STM32F746NUCLEO\ManagedCode\Hardware</Filter>
-    </None>
-    <None Include="..\dotnetmf.proj">
-      <Filter>Solutions\STM32F746NUCLEO</Filter>
-    </None>
-    <None Include="..\ReadMe.md">
-      <Filter>Solutions\STM32F746NUCLEO</Filter>
-    </None>
-    <None Include="..\STM32F746NUCLEO.ioc">
-      <Filter>Solutions\STM32F746NUCLEO</Filter>
-    </None>
-    <None Include="..\STM32F746NUCLEO.settings">
-      <Filter>Solutions\STM32F746NUCLEO</Filter>
-    </None>
-    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.gcc.settings">
-      <Filter>Tools\Targets</Filter>
-    </None>
-    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.gcc.targets">
-      <Filter>Tools\Targets</Filter>
-    </None>
-    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.settings">
-      <Filter>Tools\Targets</Filter>
-    </None>
-    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.targets">
-      <Filter>Tools\Targets</Filter>
-    </None>
-    <None Include="..\..\..\Support\CreateMfPkVersionProj.proj">
-      <Filter>Support</Filter>
-    </None>
-    <None Include="..\..\..\Support\CreateReleaseInfo.proj">
-      <Filter>Support</Filter>
-    </None>
-    <None Include="..\..\..\Support\dotNetMF.proj">
-      <Filter>Support</Filter>
-    </None>
-    <None Include="..\..\..\Support\GenerateFrameworkList.proj">
-      <Filter>Support</Filter>
-    </None>
-    <None Include="..\..\..\Support\crc\crc.vcproj">
-      <Filter>Support\CRC</Filter>
-    </None>
-    <None Include="..\..\..\Support\crc\dotNetMF.proj">
-      <Filter>Support\CRC</Filter>
-    </None>
-    <None Include="..\..\..\Support\frameworkbase\dotNetMF.proj">
-      <Filter>Support\FrameworkBase</Filter>
-    </None>
-    <None Include="..\..\..\Support\frameworkbase\dotNetMF.proj.port">
-      <Filter>Support\FrameworkBase</Filter>
-    </None>
-    <None Include="..\..\..\Support\Include\dotNetMF.proj">
-      <Filter>Support\Include</Filter>
-    </None>
-    <None Include="..\..\..\Support\Include\Support_Include.vcproj">
-      <Filter>Support\Include</Filter>
-    </None>
-    <None Include="..\..\..\Support\WireProtocol\dotNetMF.proj">
-      <Filter>Support\WireProtocol</Filter>
-    </None>
-    <None Include="..\..\..\Support\WireProtocol\WireProtocol.vcproj">
-      <Filter>Support\WireProtocol</Filter>
-    </None>
     <None Include="..\..\..\CLR\build.dirproj">
       <Filter>CLR</Filter>
     </None>
-    <None Include="..\..\..\CLR\dotNetMF.proj">
-      <Filter>CLR</Filter>
-    </None>
-    <None Include="..\..\..\CLR\dotNetMF.proj.port">
-      <Filter>CLR</Filter>
-    </None>
     <None Include="..\..\..\CLR\Core\dotNetMF.proj">
-      <Filter>CLR\Core</Filter>
-    </None>
-    <None Include="..\..\..\CLR\Core\InteropAssembliesTable.proj">
       <Filter>CLR\Core</Filter>
     </None>
     <None Include="..\..\..\CLR\Core\Hardware\dotNetMF.proj">
@@ -198,6 +42,9 @@
     </None>
     <None Include="..\..\..\CLR\Core\I2C\dotNetMF_stub.proj">
       <Filter>CLR\Core\I2C</Filter>
+    </None>
+    <None Include="..\..\..\CLR\Core\InteropAssembliesTable.proj">
+      <Filter>CLR\Core</Filter>
     </None>
     <None Include="..\..\..\CLR\Core\IOPort\dotNetMF.proj">
       <Filter>CLR\Core\IOPort</Filter>
@@ -250,17 +97,23 @@
     <None Include="..\..\..\CLR\Diagnostics\dotNetMF_stub.proj">
       <Filter>CLR\Diagnostics</Filter>
     </None>
-    <None Include="..\..\..\CLR\Graphics\dotNetMF.proj">
-      <Filter>CLR\Graphics</Filter>
+    <None Include="..\..\..\CLR\dotNetMF.proj">
+      <Filter>CLR</Filter>
     </None>
-    <None Include="..\..\..\CLR\Graphics\dotNetMF_stub.proj">
-      <Filter>CLR\Graphics</Filter>
+    <None Include="..\..\..\CLR\dotNetMF.proj.port">
+      <Filter>CLR</Filter>
     </None>
     <None Include="..\..\..\CLR\Graphics\Bmp\dotNetMF.proj">
       <Filter>CLR\Graphics\Bmp</Filter>
     </None>
     <None Include="..\..\..\CLR\Graphics\Bmp\dotNetMF_stub.proj">
       <Filter>CLR\Graphics\Bmp</Filter>
+    </None>
+    <None Include="..\..\..\CLR\Graphics\dotNetMF.proj">
+      <Filter>CLR\Graphics</Filter>
+    </None>
+    <None Include="..\..\..\CLR\Graphics\dotNetMF_stub.proj">
+      <Filter>CLR\Graphics</Filter>
     </None>
     <None Include="..\..\..\CLR\Graphics\Gif\dotNetMF.proj">
       <Filter>CLR\Graphics\Gif</Filter>
@@ -280,11 +133,11 @@
     <None Include="..\..\..\CLR\Jitter\dotNetMF.proj">
       <Filter>CLR\Jitter</Filter>
     </None>
-    <None Include="..\..\..\CLR\Libraries\dotNetMF.proj">
-      <Filter>CLR\Libraries</Filter>
-    </None>
     <None Include="..\..\..\CLR\Libraries\CorLib\dotNetMF.proj">
       <Filter>CLR\Libraries\CorLib</Filter>
+    </None>
+    <None Include="..\..\..\CLR\Libraries\dotNetMF.proj">
+      <Filter>CLR\Libraries</Filter>
     </None>
     <None Include="..\..\..\CLR\Libraries\SecurityPkcs11\dotNetMF.proj">
       <Filter>CLR\Libraries\SecurityPkcs11</Filter>
@@ -400,17 +253,14 @@
     <None Include="..\..\..\CLR\Tools\build.dirproj">
       <Filter>CLR\Tools</Filter>
     </None>
-    <None Include="..\..\..\CLR\Tools\dotNetMF.proj">
-      <Filter>CLR\Tools</Filter>
-    </None>
-    <None Include="..\..\..\CLR\Tools\Tools.settings">
-      <Filter>CLR\Tools</Filter>
-    </None>
     <None Include="..\..\..\CLR\Tools\BuildHelper\dotNetMF.proj">
       <Filter>CLR\Tools\BuildHelper</Filter>
     </None>
     <None Include="..\..\..\CLR\Tools\CorHelper\dotNetMF.proj">
       <Filter>CLR\Tools\CorHelper</Filter>
+    </None>
+    <None Include="..\..\..\CLR\Tools\dotNetMF.proj">
+      <Filter>CLR\Tools</Filter>
     </None>
     <None Include="..\..\..\CLR\Tools\Include\dotNetMF.proj">
       <Filter>CLR\Tools\Include</Filter>
@@ -424,8 +274,8 @@
     <None Include="..\..\..\CLR\Tools\StubWinHal\dotNetMF.proj">
       <Filter>CLR\Tools\StubWinHal</Filter>
     </None>
-    <None Include="..\..\..\CMSIS\ReadMe.md">
-      <Filter>CMSIS</Filter>
+    <None Include="..\..\..\CLR\Tools\Tools.settings">
+      <Filter>CLR\Tools</Filter>
     </None>
     <None Include="..\..\..\CMSIS\ARM.CMSIS.pdsc">
       <Filter>CMSIS</Filter>
@@ -448,14 +298,8 @@
     <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\SVC_Table.S">
       <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\GCC</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\dotNetMF.proj">
-      <Filter>DeviceCode</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Cores\dotNetMF.proj">
-      <Filter>DeviceCode\Cores</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Cores\arm\Processors\dotNetMF.proj">
-      <Filter>DeviceCode\Cores\arm\Processors</Filter>
+    <None Include="..\..\..\CMSIS\ReadMe.md">
+      <Filter>CMSIS</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\GlobalLock\dotNetMF.proj">
       <Filter>DeviceCode\Cores\arm\Processors\CortexMx\GlobalLock</Filter>
@@ -505,8 +349,14 @@
     <None Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\TinyHal\RVD_S\VectorTable_Template.s">
       <Filter>DeviceCode\Cores\arm\Processors\CortexMx\TinyHal\RVD_S</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers</Filter>
+    <None Include="..\..\..\DeviceCode\Cores\arm\Processors\dotNetMF.proj">
+      <Filter>DeviceCode\Cores\arm\Processors</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Cores\dotNetMF.proj">
+      <Filter>DeviceCode\Cores</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\dotNetMF.proj">
+      <Filter>DeviceCode</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Backlight\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Backlight</Filter>
@@ -520,20 +370,20 @@
     <None Include="..\..\..\DeviceCode\Drivers\Backlight\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Backlight\stubs</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\BatteryCharger\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\BatteryCharger</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\BatteryCharger\Charger_DualStatus\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BatteryCharger\Charger_DualStatus</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\BatteryCharger\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\BatteryCharger</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\BatteryCharger\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BatteryCharger\stubs</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\BatteryMeasurement</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\AD7466\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BatteryMeasurement\AD7466</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\BatteryMeasurement</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BatteryMeasurement\stubs</Filter>
@@ -568,14 +418,14 @@
     <None Include="..\..\..\DeviceCode\Drivers\BlockStorage\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BlockStorage</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\BlockStorage\Flash\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\BlockStorage\Flash</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\BlockStorage\Flash\AM29DL_16\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BlockStorage\Flash\AM29DL_16</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\BlockStorage\Flash\AM29DL_32\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BlockStorage\Flash\AM29DL_32</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\BlockStorage\Flash\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\BlockStorage\Flash</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\BlockStorage\Flash\I28F_16\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BlockStorage\Flash\I28F_16</Filter>
@@ -595,14 +445,14 @@
     <None Include="..\..\..\DeviceCode\Drivers\BlockStorage\WearLeveling\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\BlockStorage\WearLeveling</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\Display\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\Display</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\Display\A025DL02\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Display\A025DL02</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Display\A025DL02\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Display\A025DL02\stubs</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\Display\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\Display</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Display\HD66773R\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Display\HD66773R</Filter>
@@ -636,6 +486,9 @@
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Display\TX09D71VM1CCA\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Display\TX09D71VM1CCA\stubs</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Ethernet\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Ethernet</Filter>
@@ -715,9 +568,6 @@
     <None Include="..\..\..\DeviceCode\Drivers\sockets\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\sockets\stubs</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\Stubs\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\Stubs</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\Backlight\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\Backlight</Filter>
     </None>
@@ -727,14 +577,14 @@
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\Backlight\SPI\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\Backlight\SPI</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\Stubs\BlockStorage\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\Stubs\BlockStorage</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\BlockStorage\AddDevices\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\BlockStorage\AddDevices</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\BlockStorage\Config\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\BlockStorage\Config</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\Stubs\BlockStorage\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\Stubs\BlockStorage</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\BlockStorage\Driver\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\BlockStorage\Driver</Filter>
@@ -745,14 +595,17 @@
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\Display\LCDController\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\Display\LCDController</Filter>
     </None>
+    <None Include="..\..\..\DeviceCode\Drivers\Stubs\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\Stubs</Filter>
+    </None>
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\GlobalLock\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\GlobalLock</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\Stubs\Network\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\Stubs\Network</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Config\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\Network\Config</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\Stubs\Network\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\Stubs\Network</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Ethernet\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\Stubs\Network\Ethernet</Filter>
@@ -862,11 +715,11 @@
     <None Include="..\..\..\DeviceCode\Drivers\TimeService\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\TimeService\stubs</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Drivers\TouchPanel\dotNetMF.proj">
-      <Filter>DeviceCode\Drivers\TouchPanel</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Drivers\TouchPanel\ADS7843\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\TouchPanel\ADS7843</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Drivers\TouchPanel\dotNetMF.proj">
+      <Filter>DeviceCode\Drivers\TouchPanel</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Drivers\TouchPanel\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Drivers\TouchPanel\stubs</Filter>
@@ -879,9 +732,6 @@
     </None>
     <None Include="..\..\..\DeviceCode\Initialization\dotNetMF_loader.proj">
       <Filter>DeviceCode\Initialization</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\pal\dotNetMF.proj">
-      <Filter>DeviceCode\pal</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\pal\AsyncProcCall\dotNetMF.proj">
       <Filter>DeviceCode\pal\AsyncProcCall</Filter>
@@ -901,11 +751,11 @@
     <None Include="..\..\..\DeviceCode\pal\Buttons\stubs\dotNetMF.proj">
       <Filter>DeviceCode\pal\Buttons\stubs</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\pal\COM\dotNetMF.proj">
-      <Filter>DeviceCode\pal\COM</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\pal\COM\Config\dotNetMF.proj">
       <Filter>DeviceCode\pal\COM\Config</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\pal\COM\dotNetMF.proj">
+      <Filter>DeviceCode\pal\COM</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\pal\COM\i2c\dotNetMF.proj">
       <Filter>DeviceCode\pal\COM\i2c</Filter>
@@ -961,6 +811,9 @@
     <None Include="..\..\..\DeviceCode\pal\Diagnostics\stubs\dotNetMF.proj">
       <Filter>DeviceCode\pal\Diagnostics\stubs</Filter>
     </None>
+    <None Include="..\..\..\DeviceCode\pal\dotNetMF.proj">
+      <Filter>DeviceCode\pal</Filter>
+    </None>
     <None Include="..\..\..\DeviceCode\pal\Double\dotNetMF.proj">
       <Filter>DeviceCode\pal\Double</Filter>
     </None>
@@ -973,11 +826,11 @@
     <None Include="..\..\..\DeviceCode\pal\fs\dotNetMF.proj">
       <Filter>DeviceCode\pal\fs</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\pal\fs\stubs\dotNetMF.proj">
-      <Filter>DeviceCode\pal\fs\stubs</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\pal\fs\stubs\Config\dotNetMF.proj">
       <Filter>DeviceCode\pal\fs\stubs\Config</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\pal\fs\stubs\dotNetMF.proj">
+      <Filter>DeviceCode\pal\fs\stubs</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\pal\Gesture\dotNetMF.proj">
       <Filter>DeviceCode\pal\Gesture</Filter>
@@ -1012,11 +865,11 @@
     <None Include="..\..\..\DeviceCode\pal\MFUpdate\dotNetMF.proj">
       <Filter>DeviceCode\pal\MFUpdate</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\pal\MFUpdate\stubs\dotNetMF.proj">
-      <Filter>DeviceCode\pal\MFUpdate\stubs</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\pal\MFUpdate\stubs\Config\dotNetMF.proj">
       <Filter>DeviceCode\pal\MFUpdate\stubs\Config</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\pal\MFUpdate\stubs\dotNetMF.proj">
+      <Filter>DeviceCode\pal\MFUpdate\stubs</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\pal\OneWire\dotNetMF.proj">
       <Filter>DeviceCode\pal\OneWire</Filter>
@@ -1033,11 +886,11 @@
     <None Include="..\..\..\DeviceCode\pal\piezo\dotNetMF.proj">
       <Filter>DeviceCode\pal\piezo</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\pal\piezo\stubs\dotNetMF.proj">
-      <Filter>DeviceCode\pal\piezo\stubs</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\pal\piezo\stubs\Config\dotNetMF.proj">
       <Filter>DeviceCode\pal\piezo\stubs\Config</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\pal\piezo\stubs\dotNetMF.proj">
+      <Filter>DeviceCode\pal\piezo\stubs</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\pal\PKCS11\dotNetMF.proj">
       <Filter>DeviceCode\pal\PKCS11</Filter>
@@ -1078,12 +931,6 @@
     <None Include="..\..\..\DeviceCode\pal\StateDebounce\stubs\dotNetMF.proj">
       <Filter>DeviceCode\pal\StateDebounce\stubs</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\pal\time\dotNetMF.proj">
-      <Filter>DeviceCode\pal\time</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\pal\time\stubs\dotNetMF.proj">
-      <Filter>DeviceCode\pal\time\stubs</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\pal\timeservice\dotNetMF.proj">
       <Filter>DeviceCode\pal\timeservice</Filter>
     </None>
@@ -1092,6 +939,12 @@
     </None>
     <None Include="..\..\..\DeviceCode\pal\timeservice\stubs\dotNetMF.proj">
       <Filter>DeviceCode\pal\timeservice\stubs</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\pal\time\dotNetMF.proj">
+      <Filter>DeviceCode\pal\time</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\pal\time\stubs\dotNetMF.proj">
+      <Filter>DeviceCode\pal\time\stubs</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\pal\tinycrt\dotNetMF.proj">
       <Filter>DeviceCode\pal\tinycrt</Filter>
@@ -1120,11 +973,65 @@
     <None Include="..\..\..\DeviceCode\Targets\Native\dotNetMF.proj">
       <Filter>DeviceCode\Targets\Native</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\OS</Filter>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S\DefaultHandlers.s">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S\VectorTable.s">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S\DefaultHandlers.s">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S\VectorTable.s">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\STM32F7.settings">
+      <Filter>DeviceCode\Targets\Native\STM32F7</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\CMSIS_RTOS.settings">
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch\mutex">
+      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\dotNetMF.proj">
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
@@ -1132,32 +1039,20 @@
     <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\readme.txt">
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\OS\Win32</Filter>
-    </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\Win32.settings">
-      <Filter>DeviceCode\Targets\OS\Win32</Filter>
+    <None Include="..\..\..\DeviceCode\Targets\OS\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\OS</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\dotnetmf.proj">
       <Filter>DeviceCode\Targets\OS\Win32\DeviceCode</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\dotNetMF.proj">
-      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
-    </None>
     <None Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\Dependencies\WINPCAP_IN_NETMF_README.txt">
       <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\Dependencies</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\readme.txt">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os</Filter>
+    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\dotNetMF.proj">
+      <Filter>DeviceCode\Targets\OS\Win32</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\dotNetMF.proj">
       <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
@@ -1165,139 +1060,130 @@
     <None Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\stubs\dotNetMF.proj">
       <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\stubs</Filter>
     </None>
+    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\readme.txt">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os</Filter>
+    </None>
+    <None Include="..\..\..\DeviceCode\Targets\OS\Win32\Win32.settings">
+      <Filter>DeviceCode\Targets\OS\Win32</Filter>
+    </None>
     <None Include="..\..\..\DeviceCode\Targets\OS\Windows\dotNetMF.proj">
       <Filter>DeviceCode\Targets\OS\Windows</Filter>
     </None>
     <None Include="..\..\..\DeviceCode\Targets\OS\Windows\Windows.settings">
       <Filter>DeviceCode\Targets\OS\Windows</Filter>
     </None>
-    <None Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch\mutex">
-      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch</Filter>
+    <None Include="..\..\..\Support\crc\crc.vcproj">
+      <Filter>Support\CRC</Filter>
+    </None>
+    <None Include="..\..\..\Support\crc\dotNetMF.proj">
+      <Filter>Support\CRC</Filter>
+    </None>
+    <None Include="..\..\..\Support\CreateMfPkVersionProj.proj">
+      <Filter>Support</Filter>
+    </None>
+    <None Include="..\..\..\Support\CreateReleaseInfo.proj">
+      <Filter>Support</Filter>
+    </None>
+    <None Include="..\..\..\Support\dotNetMF.proj">
+      <Filter>Support</Filter>
+    </None>
+    <None Include="..\..\..\Support\frameworkbase\dotNetMF.proj">
+      <Filter>Support\FrameworkBase</Filter>
+    </None>
+    <None Include="..\..\..\Support\frameworkbase\dotNetMF.proj.port">
+      <Filter>Support\FrameworkBase</Filter>
+    </None>
+    <None Include="..\..\..\Support\GenerateFrameworkList.proj">
+      <Filter>Support</Filter>
+    </None>
+    <None Include="..\..\..\Support\Include\dotNetMF.proj">
+      <Filter>Support\Include</Filter>
+    </None>
+    <None Include="..\..\..\Support\Include\Support_Include.vcproj">
+      <Filter>Support\Include</Filter>
+    </None>
+    <None Include="..\..\..\Support\WireProtocol\dotNetMF.proj">
+      <Filter>Support\WireProtocol</Filter>
+    </None>
+    <None Include="..\..\..\Support\WireProtocol\WireProtocol.vcproj">
+      <Filter>Support\WireProtocol</Filter>
+    </None>
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.gcc.settings">
+      <Filter>Tools\Targets</Filter>
+    </None>
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.gcc.targets">
+      <Filter>Tools\Targets</Filter>
+    </None>
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.settings">
+      <Filter>Tools\Targets</Filter>
+    </None>
+    <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.targets">
+      <Filter>Tools\Targets</Filter>
+    </None>
+    <None Include="..\DeviceCode\Blockstorage\addDevices\dotNetMF.proj">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\AddDevices</Filter>
+    </None>
+    <None Include="..\DeviceCode\Blockstorage\dotNetMF.proj">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage</Filter>
+    </None>
+    <None Include="..\DeviceCode\Blockstorage\STM32F7\dotNetMF.proj">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\STM32F7</Filter>
+    </None>
+    <None Include="..\DeviceCode\Initialization\dotNetMF.proj">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
+    </None>
+    <None Include="..\DeviceCode\Initialization\dotNetMF_loader.proj">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
+    </None>
+    <None Include="..\DeviceCode\Init\dotNetMF.proj">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Init</Filter>
+    </None>
+    <None Include="..\DeviceCode\USB\dotNetMF.proj">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\USB</Filter>
+    </None>
+    <None Include="..\dotnetmf.proj">
+      <Filter>Solutions\STM32F746NUCLEO</Filter>
+    </None>
+    <None Include="..\ManagedCode\dotnetmf.proj">
+      <Filter>Solutions\STM32F746NUCLEO\ManagedCode</Filter>
+    </None>
+    <None Include="..\ManagedCode\Hardware\CPU.cs">
+      <Filter>Solutions\STM32F746NUCLEO\ManagedCode\Hardware</Filter>
+    </None>
+    <None Include="..\ManagedCode\Hardware\STM32F746NUCLEO_hardware.csproj">
+      <Filter>Solutions\STM32F746NUCLEO\ManagedCode\Hardware</Filter>
+    </None>
+    <None Include="..\ReadMe.md">
+      <Filter>Solutions\STM32F746NUCLEO</Filter>
+    </None>
+    <None Include="..\STM32F746NUCLEO.ioc">
+      <Filter>Solutions\STM32F746NUCLEO</Filter>
+    </None>
+    <None Include="..\STM32F746NUCLEO.settings">
+      <Filter>Solutions\STM32F746NUCLEO</Filter>
+    </None>
+    <None Include="Assets\LinuxDebugger.xaml">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\linux_nmake.xaml">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\LocalDebugger.xaml">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\OCDDebugger.xaml">
+      <Filter>Assets</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Assets">
-      <UniqueIdentifier>{08a26e93-524c-4982-a01c-c8d4f223d6be}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions">
-      <UniqueIdentifier>{86c5864a-7c8a-4c49-877c-c6dd7ac3022b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO">
-      <UniqueIdentifier>{18322aff-3e06-4c74-b7c7-849f125cb019}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode">
-      <UniqueIdentifier>{faf462e9-0e0c-47cc-b869-3eefaa47e3d6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\ManagedCode">
-      <UniqueIdentifier>{aa28dc87-1f32-4d30-a32d-bd9d3c80e6a9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\TinyBooter">
-      <UniqueIdentifier>{93319ca5-98be-4ce5-b93e-ce8e5293456c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\TinyCLR">
-      <UniqueIdentifier>{46036410-9760-4b88-b8a6-55d5d8c35b83}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode">
-      <UniqueIdentifier>{5f3a7bb9-d929-42ec-854f-70f074e594ed}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets">
-      <UniqueIdentifier>{f8809ffe-c261-4142-8c35-db0a6e36629e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native">
-      <UniqueIdentifier>{7fa48eca-b7c4-4176-ae9b-4d67784a6a00}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7">
-      <UniqueIdentifier>{3581bce3-f22d-4f1c-b586-e8f96635b01f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode">
-      <UniqueIdentifier>{ef38cff0-febd-4b43-81ae-bc0fdf603420}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART">
-      <UniqueIdentifier>{2618bc53-a3b4-4483-b402-1b2e91af9f85}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Include">
-      <UniqueIdentifier>{4f9596c8-51ad-47a2-8c37-2d12a9e3bd2a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CMSIS">
-      <UniqueIdentifier>{e793ae84-49cf-43bb-9327-b386ea11ff66}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Application">
       <UniqueIdentifier>{4b270b0f-4e31-4f6d-9b1d-1252d27f00b8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Application\TinyBooter">
       <UniqueIdentifier>{7a3fc137-b0f7-400f-97ce-306fcbc2e162}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash">
-      <UniqueIdentifier>{89d3772e-fc87-4fd0-8330-09ff754eb005}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO">
-      <UniqueIdentifier>{e4e134d6-92bd-41de-950b-895dcbbccd5c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC">
-      <UniqueIdentifier>{a7dbd539-e4db-4d6b-98be-0ebb45b5e751}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort">
-      <UniqueIdentifier>{98166326-dd6f-4d39-aa0e-7e31488bdb2f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power">
-      <UniqueIdentifier>{4110c028-59e5-4090-86c2-ae0fe91ee7b6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time">
-      <UniqueIdentifier>{7a5d40eb-0338-4bff-88b8-201514e1de14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB">
-      <UniqueIdentifier>{0cb28cb0-048b-4468-a09d-881ff323fe8a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap">
-      <UniqueIdentifier>{74eea670-0603-4d82-b7ce-4311f78c2bfa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S">
-      <UniqueIdentifier>{12dfa433-75e3-438e-a67e-cd4be040251f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S">
-      <UniqueIdentifier>{92105228-b84c-4d89-8a86-a74e3db65e72}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage">
-      <UniqueIdentifier>{e7712ccb-b732-4e01-9ce6-2f7794c2d8d7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Init">
-      <UniqueIdentifier>{8974b656-7cea-4c5e-9456-25fe259f3cc5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Initialization">
-      <UniqueIdentifier>{8a7e9a8e-67b0-4822-8a54-adf07192c0ed}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\USB">
-      <UniqueIdentifier>{78b24bf9-e0e0-47cd-9281-5ca6978127f9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\AddDevices">
-      <UniqueIdentifier>{391fb54a-c439-495a-81af-866f6aca9c63}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\STM32F7">
-      <UniqueIdentifier>{d2444ae4-90dc-4c8d-89cf-d663798d6ae8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Solutions\STM32F746NUCLEO\ManagedCode\Hardware">
-      <UniqueIdentifier>{efa53b2e-7f52-4ba1-a551-5861d64583a7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Tools">
-      <UniqueIdentifier>{0d5ffa1d-2389-4991-9bfb-8215706a11c3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Tools\Targets">
-      <UniqueIdentifier>{ccb083ca-0dad-40a1-a0d6-992cac2a30e6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Support">
-      <UniqueIdentifier>{ba5b9ebc-e31f-42c2-ba52-2b25c031c9d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Support\CRC">
-      <UniqueIdentifier>{1cb55a85-b49a-48e4-8f9a-d8feaf9715fb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Support\FrameworkBase">
-      <UniqueIdentifier>{eaf23fde-e7ca-4ef6-9155-59b7f03cbda9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Support\Include">
-      <UniqueIdentifier>{ba00316b-c797-4198-9ca2-9eb756f1b9ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Support\WireProtocol">
-      <UniqueIdentifier>{3ec156d3-e9b8-48fd-bcc9-e4f1ab57a4b8}</UniqueIdentifier>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{08a26e93-524c-4982-a01c-c8d4f223d6be}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR">
       <UniqueIdentifier>{268cd214-6a9b-4648-8c9f-5ed2bb0cfed8}</UniqueIdentifier>
@@ -1305,35 +1191,11 @@
     <Filter Include="CLR\Core">
       <UniqueIdentifier>{7ffc1dc6-71d7-4067-b22c-929cf79b083b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CLR\Debugger">
-      <UniqueIdentifier>{2ab04eb3-e736-4d6e-bb2d-971795720755}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Diagnostics">
-      <UniqueIdentifier>{894c0bb3-bd43-4048-83a1-64292d0976e5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Graphics">
-      <UniqueIdentifier>{a5447a97-9181-4b0e-b126-28991afae232}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Include">
-      <UniqueIdentifier>{f7679376-4d38-47ec-8daf-0c9102c0930f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Jitter">
-      <UniqueIdentifier>{64af1fcc-aae6-4db2-b328-76c7ed4769f4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Libraries">
-      <UniqueIdentifier>{49cec41b-a645-4b6d-874e-7fb6774d0b4b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Messaging">
-      <UniqueIdentifier>{a0d66456-c221-4403-87ac-aa3534cd1269}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\StartupLib">
-      <UniqueIdentifier>{16c1dfbf-6c90-4571-b4c7-197ae9151b00}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Tools">
-      <UniqueIdentifier>{3c5f8ae0-a25f-4a2e-854b-bc0bddb6fca0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="CLR\Core\Hardware">
       <UniqueIdentifier>{d8b39f96-622d-4449-95c9-79b53ccea238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Core\Hardware\InterruptHandler">
+      <UniqueIdentifier>{9f0e9537-379a-45b8-8483-25c6854c4039}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR\Core\HeapPersistence">
       <UniqueIdentifier>{fc82260a-e17c-4d49-b2b3-be4587fa35b8}</UniqueIdentifier>
@@ -1356,8 +1218,14 @@
     <Filter Include="CLR\Core\Xml">
       <UniqueIdentifier>{9b2e2c88-d7ff-4338-820b-1fe895572363}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CLR\Core\Hardware\InterruptHandler">
-      <UniqueIdentifier>{9f0e9537-379a-45b8-8483-25c6854c4039}</UniqueIdentifier>
+    <Filter Include="CLR\Debugger">
+      <UniqueIdentifier>{2ab04eb3-e736-4d6e-bb2d-971795720755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Diagnostics">
+      <UniqueIdentifier>{894c0bb3-bd43-4048-83a1-64292d0976e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Graphics">
+      <UniqueIdentifier>{a5447a97-9181-4b0e-b126-28991afae232}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR\Graphics\Bmp">
       <UniqueIdentifier>{4d5d173b-3383-451a-8dc7-8473267aa992}</UniqueIdentifier>
@@ -1368,6 +1236,15 @@
     <Filter Include="CLR\Graphics\Jpeg">
       <UniqueIdentifier>{900af693-fd13-4b6c-ae6d-cb41f1d038b9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CLR\Include">
+      <UniqueIdentifier>{f7679376-4d38-47ec-8daf-0c9102c0930f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Jitter">
+      <UniqueIdentifier>{64af1fcc-aae6-4db2-b328-76c7ed4769f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Libraries">
+      <UniqueIdentifier>{49cec41b-a645-4b6d-874e-7fb6774d0b4b}</UniqueIdentifier>
+    </Filter>
     <Filter Include="CLR\Libraries\CorLib">
       <UniqueIdentifier>{571981c5-4503-43dd-9d2e-2329f6cdd9b4}</UniqueIdentifier>
     </Filter>
@@ -1377,11 +1254,29 @@
     <Filter Include="CLR\Libraries\SPOT">
       <UniqueIdentifier>{983921a7-d213-4d34-a408-7415cf1db8af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CLR\Libraries\SPOT\SPOT_Messaging">
+      <UniqueIdentifier>{b9ac295b-2e9b-4ddc-b235-2e8c96f12b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Libraries\SPOT\SPOT_Serialization">
+      <UniqueIdentifier>{533875a3-cace-4874-b779-77b6b1b0c4cb}</UniqueIdentifier>
+    </Filter>
     <Filter Include="CLR\Libraries\SPOT_Graphics">
       <UniqueIdentifier>{1663071a-1771-4e57-a022-bcb7784c1498}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR\Libraries\SPOT_Hardware">
       <UniqueIdentifier>{04a9a213-0a4a-4642-930a-01e0ecab54bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_OneWire">
+      <UniqueIdentifier>{53fcf231-b156-4a89-95c1-3565c4fd8857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_PWM">
+      <UniqueIdentifier>{6dd3b496-b4f3-4a41-a928-a38ab7633e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_Serial">
+      <UniqueIdentifier>{c0345d37-a12d-43fb-ba06-626c52da2428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_Usb">
+      <UniqueIdentifier>{0d75a180-94c9-413d-ab21-550715718e70}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR\Libraries\SPOT_IO">
       <UniqueIdentifier>{a80fcb57-3ff8-47fd-aaad-e579e2e0af1f}</UniqueIdentifier>
@@ -1407,23 +1302,14 @@
     <Filter Include="CLR\Libraries\Windows_Devices">
       <UniqueIdentifier>{c497def4-cd9d-4551-b827-1137a95e0b42}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CLR\Libraries\SPOT\SPOT_Messaging">
-      <UniqueIdentifier>{b9ac295b-2e9b-4ddc-b235-2e8c96f12b04}</UniqueIdentifier>
+    <Filter Include="CLR\Messaging">
+      <UniqueIdentifier>{a0d66456-c221-4403-87ac-aa3534cd1269}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CLR\Libraries\SPOT\SPOT_Serialization">
-      <UniqueIdentifier>{533875a3-cace-4874-b779-77b6b1b0c4cb}</UniqueIdentifier>
+    <Filter Include="CLR\StartupLib">
+      <UniqueIdentifier>{16c1dfbf-6c90-4571-b4c7-197ae9151b00}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_OneWire">
-      <UniqueIdentifier>{53fcf231-b156-4a89-95c1-3565c4fd8857}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_PWM">
-      <UniqueIdentifier>{6dd3b496-b4f3-4a41-a928-a38ab7633e8f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_Serial">
-      <UniqueIdentifier>{c0345d37-a12d-43fb-ba06-626c52da2428}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Libraries\SPOT_Hardware\SPOT_Usb">
-      <UniqueIdentifier>{0d75a180-94c9-413d-ab21-550715718e70}</UniqueIdentifier>
+    <Filter Include="CLR\Tools">
+      <UniqueIdentifier>{3c5f8ae0-a25f-4a2e-854b-bc0bddb6fca0}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR\Tools\BuildHelper">
       <UniqueIdentifier>{450ba837-2de9-4caa-b65a-bb68d5fffad2}</UniqueIdentifier>
@@ -1446,26 +1332,29 @@
     <Filter Include="CLR\Tools\PlatformDesigner">
       <UniqueIdentifier>{2af66b26-63e1-4813-bf5d-3f01f2fce873}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CLR\Tools\PlatformDesigner\ComponentBuilder">
+      <UniqueIdentifier>{9989f643-da74-45cc-b8ab-ce3264c43a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Tools\PlatformDesigner\ComponentBuilder\Properties">
+      <UniqueIdentifier>{6f894f54-fafd-47fd-b7b2-3e352caf7f38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\Tools\PlatformDesigner\ComponentObjectModel">
+      <UniqueIdentifier>{39724513-21b6-4b73-bc11-fb9fc6dc9393}</UniqueIdentifier>
+    </Filter>
     <Filter Include="CLR\Tools\StubWinHal">
       <UniqueIdentifier>{71a8d6d3-5de3-41d3-b112-c2dcbf9b1bdb}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR\Tools\TFConvert">
       <UniqueIdentifier>{ff144cdc-7fd6-45ce-a532-0697838a1a06}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CLR\Tools\PlatformDesigner\ComponentBuilder">
-      <UniqueIdentifier>{9989f643-da74-45cc-b8ab-ce3264c43a79}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Tools\PlatformDesigner\ComponentObjectModel">
-      <UniqueIdentifier>{39724513-21b6-4b73-bc11-fb9fc6dc9393}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CLR\Tools\PlatformDesigner\ComponentBuilder\Properties">
-      <UniqueIdentifier>{6f894f54-fafd-47fd-b7b2-3e352caf7f38}</UniqueIdentifier>
-    </Filter>
     <Filter Include="CLR\Tools\TFConvert\Fonts">
       <UniqueIdentifier>{d2ac29eb-6338-4ecb-8a37-5061b03e7405}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR\Tools\TFConvert\Fonts\TrueType">
       <UniqueIdentifier>{073c55a9-b32a-4f47-a925-e8591b7838e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS">
+      <UniqueIdentifier>{e793ae84-49cf-43bb-9327-b386ea11ff66}</UniqueIdentifier>
     </Filter>
     <Filter Include="CMSIS\CMSIS">
       <UniqueIdentifier>{2468e70c-6ae5-46e3-b4c4-fdda6d388b17}</UniqueIdentifier>
@@ -1490,6 +1379,9 @@
     </Filter>
     <Filter Include="CMSIS\CMSIS\RTOS\RTX\SRC\GCC">
       <UniqueIdentifier>{f404cde9-f215-4d63-be21-8f424fbd1f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode">
+      <UniqueIdentifier>{5f3a7bb9-d929-42ec-854f-70f074e594ed}</UniqueIdentifier>
     </Filter>
     <Filter Include="DeviceCode\Cores">
       <UniqueIdentifier>5c239716-0607-494c-b851-16c1d2dfd5f9</UniqueIdentifier>
@@ -1914,6 +1806,9 @@
     <Filter Include="DeviceCode\Drivers\TouchPanel\TSC2046">
       <UniqueIdentifier>8a5fbb23-e4f7-430f-9d47-f3b9c5ca2d4a</UniqueIdentifier>
     </Filter>
+    <Filter Include="DeviceCode\Include">
+      <UniqueIdentifier>{4f9596c8-51ad-47a2-8c37-2d12a9e3bd2a}</UniqueIdentifier>
+    </Filter>
     <Filter Include="DeviceCode\Initialization">
       <UniqueIdentifier>556590b6-72b8-45c9-9ad7-de4c08f7d7de</UniqueIdentifier>
     </Filter>
@@ -2133,9 +2028,6 @@
     <Filter Include="DeviceCode\pal\time">
       <UniqueIdentifier>db3db97e-1884-4b92-8e58-585d798326db</UniqueIdentifier>
     </Filter>
-    <Filter Include="DeviceCode\pal\time\stubs">
-      <UniqueIdentifier>26eb0255-d1ea-486a-b483-204212b1eaf5</UniqueIdentifier>
-    </Filter>
     <Filter Include="DeviceCode\pal\timeservice">
       <UniqueIdentifier>ac27dcff-1405-4adc-bba6-44e1a446a6e2</UniqueIdentifier>
     </Filter>
@@ -2144,6 +2036,9 @@
     </Filter>
     <Filter Include="DeviceCode\pal\timeservice\stubs">
       <UniqueIdentifier>ea6c9d4a-5249-4835-848e-dc6aac3dba76</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\pal\time\stubs">
+      <UniqueIdentifier>26eb0255-d1ea-486a-b483-204212b1eaf5</UniqueIdentifier>
     </Filter>
     <Filter Include="DeviceCode\pal\tinycrt">
       <UniqueIdentifier>fd5bcbc7-51c4-4ac5-b95f-45eeb9312048</UniqueIdentifier>
@@ -2162,6 +2057,51 @@
     </Filter>
     <Filter Include="DeviceCode\pal\watchdog\stubs">
       <UniqueIdentifier>dddf92a5-9579-4b34-aada-dd37fd97aa45</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets">
+      <UniqueIdentifier>{f8809ffe-c261-4142-8c35-db0a6e36629e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native">
+      <UniqueIdentifier>{7fa48eca-b7c4-4176-ae9b-4d67784a6a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7">
+      <UniqueIdentifier>{3581bce3-f22d-4f1c-b586-e8f96635b01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode">
+      <UniqueIdentifier>{ef38cff0-febd-4b43-81ae-bc0fdf603420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap">
+      <UniqueIdentifier>{74eea670-0603-4d82-b7ce-4311f78c2bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S">
+      <UniqueIdentifier>{12dfa433-75e3-438e-a67e-cd4be040251f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\RVD_S">
+      <UniqueIdentifier>{92105228-b84c-4d89-8a86-a74e3db65e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash">
+      <UniqueIdentifier>{89d3772e-fc87-4fd0-8330-09ff754eb005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO">
+      <UniqueIdentifier>{e4e134d6-92bd-41de-950b-895dcbbccd5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC">
+      <UniqueIdentifier>{a7dbd539-e4db-4d6b-98be-0ebb45b5e751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort">
+      <UniqueIdentifier>{98166326-dd6f-4d39-aa0e-7e31488bdb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power">
+      <UniqueIdentifier>{4110c028-59e5-4090-86c2-ae0fe91ee7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time">
+      <UniqueIdentifier>{7a5d40eb-0338-4bff-88b8-201514e1de14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART">
+      <UniqueIdentifier>{2618bc53-a3b4-4483-b402-1b2e91af9f85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB">
+      <UniqueIdentifier>{0cb28cb0-048b-4468-a09d-881ff323fe8a}</UniqueIdentifier>
     </Filter>
     <Filter Include="DeviceCode\Targets\OS">
       <UniqueIdentifier>c0093974-0d32-4f52-8002-5d45fd90653b</UniqueIdentifier>
@@ -2202,23 +2142,68 @@
     <Filter Include="DeviceCode\Targets\OS\Windows">
       <UniqueIdentifier>fb6d13c2-5589-4eac-9842-a583223b5cd7</UniqueIdentifier>
     </Filter>
+    <Filter Include="Solutions">
+      <UniqueIdentifier>{86c5864a-7c8a-4c49-877c-c6dd7ac3022b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO">
+      <UniqueIdentifier>{18322aff-3e06-4c74-b7c7-849f125cb019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode">
+      <UniqueIdentifier>{faf462e9-0e0c-47cc-b869-3eefaa47e3d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage">
+      <UniqueIdentifier>{e7712ccb-b732-4e01-9ce6-2f7794c2d8d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\AddDevices">
+      <UniqueIdentifier>{391fb54a-c439-495a-81af-866f6aca9c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\STM32F7">
+      <UniqueIdentifier>{d2444ae4-90dc-4c8d-89cf-d663798d6ae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Init">
+      <UniqueIdentifier>{8974b656-7cea-4c5e-9456-25fe259f3cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\Initialization">
+      <UniqueIdentifier>{8a7e9a8e-67b0-4822-8a54-adf07192c0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\DeviceCode\USB">
+      <UniqueIdentifier>{78b24bf9-e0e0-47cd-9281-5ca6978127f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\ManagedCode">
+      <UniqueIdentifier>{aa28dc87-1f32-4d30-a32d-bd9d3c80e6a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\ManagedCode\Hardware">
+      <UniqueIdentifier>{efa53b2e-7f52-4ba1-a551-5861d64583a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\TinyBooter">
+      <UniqueIdentifier>{93319ca5-98be-4ce5-b93e-ce8e5293456c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\TinyCLR">
+      <UniqueIdentifier>{46036410-9760-4b88-b8a6-55d5d8c35b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{ba5b9ebc-e31f-42c2-ba52-2b25c031c9d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support\CRC">
+      <UniqueIdentifier>{1cb55a85-b49a-48e4-8f9a-d8feaf9715fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support\FrameworkBase">
+      <UniqueIdentifier>{eaf23fde-e7ca-4ef6-9155-59b7f03cbda9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support\Include">
+      <UniqueIdentifier>{ba00316b-c797-4198-9ca2-9eb756f1b9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support\WireProtocol">
+      <UniqueIdentifier>{3ec156d3-e9b8-48fd-bcc9-e4f1ab57a4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{0d5ffa1d-2389-4991-9bfb-8215706a11c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Targets">
+      <UniqueIdentifier>{ccb083ca-0dad-40a1-a0d6-992cac2a30e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART\STM32F7_usart_functions.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TinyBooter\allocator.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\TinyBooter</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TinyBooter\TinyBooterEntry.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\TinyBooter</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TinyCLR\allocator.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\TinyCLR</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TinyCLR\tinyclr.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\TinyCLR</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Application\TinyBooter\Commands.cpp">
       <Filter>Application\TinyBooter</Filter>
     </ClCompile>
@@ -2233,66 +2218,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Application\TinyBooter\TinyBooterDecompressor.cpp">
       <Filter>Application\TinyBooter</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\STM32F7_Flash_driver.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO\STM32F7_GPIO_functions.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC\STM32F7_intc_functions.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort\ItmPort.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\STM32F7_Power_functions.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time\STM32F7_time_functions.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\STM32F7_usb_functions.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\STM32F7_bootstrap.cpp">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DeviceCode\Blockstorage\addDevices\Bl_addDevices.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\AddDevices</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DeviceCode\Blockstorage\STM32F7\STM32F7_BlConfig.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\STM32F7</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DeviceCode\Init\IO_Init.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Init</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DeviceCode\Initialization\OEM_Model_SKU_NetworkID.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DeviceCode\Initialization\SystemState.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DeviceCode\Initialization\tinyhal.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
-    </ClCompile>
-    <ClCompile Include="..\DeviceCode\USB\usb_config.cpp">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\USB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Support\crc\CRC.cpp">
-      <Filter>Support\CRC</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Support\crc\stdafx.cpp">
-      <Filter>Support\CRC</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Support\WireProtocol\Compression.cpp">
-      <Filter>Support\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Support\WireProtocol\stdafx.cpp">
-      <Filter>Support\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Support\WireProtocol\WireProtocol.cpp">
-      <Filter>Support\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Core\AVLTree.cpp">
       <Filter>CLR\Core</Filter>
@@ -2408,8 +2333,38 @@
     <ClCompile Include="..\..\..\CLR\Core\GarbageCollector_Info.cpp">
       <Filter>CLR\Core</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Hardware\Hardware.cpp">
+      <Filter>CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Hardware\Hardware_stub.cpp">
+      <Filter>CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Hardware\InterruptHandler\InterruptHandler.cpp">
+      <Filter>CLR\Core\Hardware\InterruptHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Hardware\InterruptHandler\InterruptHandler_stub.cpp">
+      <Filter>CLR\Core\Hardware\InterruptHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\HeapPersistence\Heap_Persistence.cpp">
+      <Filter>CLR\Core\HeapPersistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\HeapPersistence\Heap_Persistence_stub.cpp">
+      <Filter>CLR\Core\HeapPersistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\I2C\CLR_RT_HeapBlock_I2CXAction.cpp">
+      <Filter>CLR\Core\I2C</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\I2C\i2c_stub.cpp">
+      <Filter>CLR\Core\I2C</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\CLR\Core\Interpreter.cpp">
       <Filter>CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\IOPort\CLR_RT_HeapBlock_IOPort.cpp">
+      <Filter>CLR\Core\IOPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\IOPort\IOPort_stub.cpp">
+      <Filter>CLR\Core\IOPort</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Core\Jitter.cpp">
       <Filter>CLR\Core</Filter>
@@ -2444,8 +2399,26 @@
     <ClCompile Include="..\..\..\CLR\Core\Random.cpp">
       <Filter>CLR\Core</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\RPC\CLR_RT_HeapBlock_EndPoint.cpp">
+      <Filter>CLR\Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\RPC\RPC_stub.cpp">
+      <Filter>CLR\Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Serialization\BinaryFormatter.cpp">
+      <Filter>CLR\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Serialization\BinaryFormatter_stub.cpp">
+      <Filter>CLR\Core\Serialization</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\CLR\Core\Streams.cpp">
       <Filter>CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Stream\FileStream.cpp">
+      <Filter>CLR\Core\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Core\Stream\Stream_stub.cpp">
+      <Filter>CLR\Core\Stream</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Core\StringTable.cpp">
       <Filter>CLR\Core</Filter>
@@ -2467,54 +2440,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Core\XmlUtil.cpp">
       <Filter>CLR\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Hardware\Hardware.cpp">
-      <Filter>CLR\Core\Hardware</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Hardware\Hardware_stub.cpp">
-      <Filter>CLR\Core\Hardware</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Hardware\InterruptHandler\InterruptHandler.cpp">
-      <Filter>CLR\Core\Hardware\InterruptHandler</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Hardware\InterruptHandler\InterruptHandler_stub.cpp">
-      <Filter>CLR\Core\Hardware\InterruptHandler</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\HeapPersistence\Heap_Persistence.cpp">
-      <Filter>CLR\Core\HeapPersistence</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\HeapPersistence\Heap_Persistence_stub.cpp">
-      <Filter>CLR\Core\HeapPersistence</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\I2C\CLR_RT_HeapBlock_I2CXAction.cpp">
-      <Filter>CLR\Core\I2C</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\I2C\i2c_stub.cpp">
-      <Filter>CLR\Core\I2C</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\IOPort\CLR_RT_HeapBlock_IOPort.cpp">
-      <Filter>CLR\Core\IOPort</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\IOPort\IOPort_stub.cpp">
-      <Filter>CLR\Core\IOPort</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\RPC\CLR_RT_HeapBlock_EndPoint.cpp">
-      <Filter>CLR\Core\RPC</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\RPC\RPC_stub.cpp">
-      <Filter>CLR\Core\RPC</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Serialization\BinaryFormatter.cpp">
-      <Filter>CLR\Core\Serialization</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Serialization\BinaryFormatter_stub.cpp">
-      <Filter>CLR\Core\Serialization</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Stream\FileStream.cpp">
-      <Filter>CLR\Core\Stream</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Core\Stream\Stream_stub.cpp">
-      <Filter>CLR\Core\Stream</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Core\Xml\XmlCharRef.cpp">
       <Filter>CLR\Core\Xml</Filter>
@@ -2609,21 +2534,6 @@
     <ClCompile Include="..\..\..\CLR\Graphics\Bitmap_Win32.cpp">
       <Filter>CLR\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Graphics\Font.cpp">
-      <Filter>CLR\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Graphics\Font_Win32.cpp">
-      <Filter>CLR\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Graphics\Graphics.cpp">
-      <Filter>CLR\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Graphics\Graphics_fastcompile.cpp">
-      <Filter>CLR\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Graphics\graphics_stub.cpp">
-      <Filter>CLR\Graphics</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\CLR\Graphics\Bmp\Bitmap.cpp">
       <Filter>CLR\Graphics\Bmp</Filter>
     </ClCompile>
@@ -2632,6 +2542,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Graphics\Bmp\Graphics_Bmp.cpp">
       <Filter>CLR\Graphics\Bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Graphics\Font.cpp">
+      <Filter>CLR\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Graphics\Font_Win32.cpp">
+      <Filter>CLR\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Graphics\Gif\Gif.cpp">
       <Filter>CLR\Graphics\Gif</Filter>
@@ -2644,6 +2560,15 @@
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Graphics\Gif\lzwread.cpp">
       <Filter>CLR\Graphics\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Graphics\Graphics.cpp">
+      <Filter>CLR\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Graphics\Graphics_fastcompile.cpp">
+      <Filter>CLR\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Graphics\graphics_stub.cpp">
+      <Filter>CLR\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Graphics\Jpeg\Graphics_Jpeg.c">
       <Filter>CLR\Graphics\Jpeg</Filter>
@@ -3044,6 +2969,21 @@
     <ClCompile Include="..\..\..\CLR\Libraries\SPOT\spot_fastcompile.cpp">
       <Filter>CLR\Libraries\SPOT</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_messaging_fastcompile.cpp">
+      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_Messaging_stub.cpp">
+      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_native_Microsoft_SPOT_Messaging_EndPoint.cpp">
+      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_native_Microsoft_SPOT_Messaging_Message.cpp">
+      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_native_Microsoft_SPOT_Messaging_Message__RemotedException.cpp">
+      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\CLR\Libraries\SPOT\spot_native.cpp">
       <Filter>CLR\Libraries\SPOT</Filter>
     </ClCompile>
@@ -3088,21 +3028,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Libraries\SPOT\spot_native_System_Security_Cryptography_X509Certificates_X509Certificate.cpp">
       <Filter>CLR\Libraries\SPOT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_messaging_fastcompile.cpp">
-      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_Messaging_stub.cpp">
-      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_native_Microsoft_SPOT_Messaging_EndPoint.cpp">
-      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_native_Microsoft_SPOT_Messaging_Message.cpp">
-      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\spot_native_Microsoft_SPOT_Messaging_Message__RemotedException.cpp">
-      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\CLR\Libraries\SPOT\SPOT_Serialization\spot_native_Microsoft_SPOT_Serialization.cpp">
       <Filter>CLR\Libraries\SPOT\SPOT_Serialization</Filter>
@@ -3446,6 +3371,15 @@
     <ClCompile Include="..\..\..\CLR\Tools\StubWinHal\StubWinHal.cpp">
       <Filter>CLR\Tools\StubWinHal</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM0.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM3.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM4.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\HAL_CM.c">
       <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
     </ClCompile>
@@ -3487,15 +3421,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Timer.c">
       <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM0.c">
-      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM3.c">
-      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM4.c">
-      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\GlobalLock\SmartPtr_cortex.cpp">
       <Filter>DeviceCode\Cores\arm\Processors\CortexMx\GlobalLock</Filter>
@@ -3557,9 +3482,6 @@
     <ClCompile Include="..\..\..\DeviceCode\Drivers\BatteryCharger\stubs\stubs_functions.cpp">
       <Filter>DeviceCode\Drivers\BatteryCharger\stubs</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\BatteryMeasurement_config.cpp">
-      <Filter>DeviceCode\Drivers\BatteryMeasurement</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\AD7466\AD7466_driver.cpp">
       <Filter>DeviceCode\Drivers\BatteryMeasurement\AD7466</Filter>
     </ClCompile>
@@ -3568,6 +3490,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\AD7466\AD7466_functions.cpp">
       <Filter>DeviceCode\Drivers\BatteryMeasurement\AD7466</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\BatteryMeasurement_config.cpp">
+      <Filter>DeviceCode\Drivers\BatteryMeasurement</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\BatteryMeasurement\stubs\BatteryMeasurement_stubs_config.cpp">
       <Filter>DeviceCode\Drivers\BatteryMeasurement\stubs</Filter>
@@ -3713,14 +3638,14 @@
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Display\TX09D71VM1CCA\fastcompile_TX09D71VM1CCA.cpp">
       <Filter>DeviceCode\Drivers\Display\TX09D71VM1CCA</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Drivers\Display\TX09D71VM1CCA\stubs\TX09D71VM1CCA_config_stubs.cpp">
+      <Filter>DeviceCode\Drivers\Display\TX09D71VM1CCA\stubs</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Display\TX09D71VM1CCA\TX09D71VM1CCA_driver.cpp">
       <Filter>DeviceCode\Drivers\Display\TX09D71VM1CCA</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Display\TX09D71VM1CCA\TX09D71VM1CCA_functions.cpp">
       <Filter>DeviceCode\Drivers\Display\TX09D71VM1CCA</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Drivers\Display\TX09D71VM1CCA\stubs\TX09D71VM1CCA_config_stubs.cpp">
-      <Filter>DeviceCode\Drivers\Display\TX09D71VM1CCA\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Ethernet\enc28j60\enc28j60.cpp">
       <Filter>DeviceCode\Drivers\Ethernet\enc28j60</Filter>
@@ -3860,14 +3785,14 @@
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Config\Network_config_stubs.cpp">
       <Filter>DeviceCode\Drivers\Stubs\Network\Config</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Ethernet\EthernetDriver_stubs.cpp">
-      <Filter>DeviceCode\Drivers\Stubs\Network\Ethernet</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Ethernet\ENC28J60_Config\enc28j60_config_stubs.cpp">
       <Filter>DeviceCode\Drivers\Stubs\Network\Ethernet\ENC28J60_Config</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Ethernet\ENC28J60_LWIP_Config\enc28j60_LWIP_config_stubs.cpp">
       <Filter>DeviceCode\Drivers\Stubs\Network\Ethernet\ENC28J60_LWIP_Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Ethernet\EthernetDriver_stubs.cpp">
+      <Filter>DeviceCode\Drivers\Stubs\Network\Ethernet</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Stubs\Network\Loopback\loopback_stubs.cpp">
       <Filter>DeviceCode\Drivers\Stubs\Network\Loopback</Filter>
@@ -3947,14 +3872,14 @@
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Stubs\VirtualKey\virtualkey_stubs.cpp">
       <Filter>DeviceCode\Drivers\Stubs\VirtualKey</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Drivers\Thermistor\Thermistor.cpp">
-      <Filter>DeviceCode\Drivers\Thermistor</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Thermistor\stubs\stubs_functions.cpp">
       <Filter>DeviceCode\Drivers\Thermistor\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\Thermistor\stubs\Thermistor_stubs_functions.cpp">
       <Filter>DeviceCode\Drivers\Thermistor\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Drivers\Thermistor\Thermistor.cpp">
+      <Filter>DeviceCode\Drivers\Thermistor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Drivers\TimeService\stubs\fastcompile_timeservice_stubs.cpp">
       <Filter>DeviceCode\Drivers\TimeService\stubs</Filter>
@@ -4031,11 +3956,11 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\COM\ComDirector.cpp">
       <Filter>DeviceCode\pal\COM</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\COM\GenericPort.cpp">
-      <Filter>DeviceCode\pal\COM</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\COM\Config\DebuggerPort_SSL_config_stub.cpp">
       <Filter>DeviceCode\pal\COM\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\COM\GenericPort.cpp">
+      <Filter>DeviceCode\pal\COM</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\COM\i2c\i2c.cpp">
       <Filter>DeviceCode\pal\COM\i2c</Filter>
@@ -4064,20 +3989,20 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\COM\stubs\ComDirector_stubs.cpp">
       <Filter>DeviceCode\pal\COM\stubs</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\COM\usart\usart.cpp">
-      <Filter>DeviceCode\pal\COM\usart</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\COM\usart\stubs\usart_stubs.cpp">
       <Filter>DeviceCode\pal\COM\usart\stubs</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\COM\usb\usb.cpp">
-      <Filter>DeviceCode\pal\COM\usb</Filter>
+    <ClCompile Include="..\..\..\DeviceCode\pal\COM\usart\usart.cpp">
+      <Filter>DeviceCode\pal\COM\usart</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\COM\usb\stubs\usb_config.cpp">
       <Filter>DeviceCode\pal\COM\usb\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\COM\usb\stubs\usb_stubs.cpp">
       <Filter>DeviceCode\pal\COM\usb\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\COM\usb\usb.cpp">
+      <Filter>DeviceCode\pal\COM\usb</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\configuration\ConfigHelper.cpp">
       <Filter>DeviceCode\pal\configuration</Filter>
@@ -4106,11 +4031,11 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\fs\fs_pal.cpp">
       <Filter>DeviceCode\pal\fs</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\fs\stubs\fs_stubs.cpp">
-      <Filter>DeviceCode\pal\fs\stubs</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\fs\stubs\Config\FS_config_stubs.cpp">
       <Filter>DeviceCode\pal\fs\stubs\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\fs\stubs\fs_stubs.cpp">
+      <Filter>DeviceCode\pal\fs\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\Gesture\gesture_driver.cpp">
       <Filter>DeviceCode\pal\Gesture</Filter>
@@ -4157,20 +4082,11 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\MFUpdate\MFUpdate.cpp">
       <Filter>DeviceCode\pal\MFUpdate</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\MFUpdate\stubs\MFUpdate_stub.cpp">
-      <Filter>DeviceCode\pal\MFUpdate\stubs</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\MFUpdate\stubs\Config\MFUpdate_config_stub.cpp">
       <Filter>DeviceCode\pal\MFUpdate\stubs\Config</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\OneWireLinkLevelDriver.cpp">
-      <Filter>DeviceCode\pal\OneWire</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\OneWireLinkLevelSession.cpp">
-      <Filter>DeviceCode\pal\OneWire</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\onewire_fastcompile.cpp">
-      <Filter>DeviceCode\pal\OneWire</Filter>
+    <ClCompile Include="..\..\..\DeviceCode\pal\MFUpdate\stubs\MFUpdate_stub.cpp">
+      <Filter>DeviceCode\pal\MFUpdate\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\DallasSemi\crcutil.cpp">
       <Filter>DeviceCode\pal\OneWire\DallasSemi</Filter>
@@ -4183,6 +4099,15 @@
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\DallasSemi\owtran.cpp">
       <Filter>DeviceCode\pal\OneWire\DallasSemi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\OneWireLinkLevelDriver.cpp">
+      <Filter>DeviceCode\pal\OneWire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\OneWireLinkLevelSession.cpp">
+      <Filter>DeviceCode\pal\OneWire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\onewire_fastcompile.cpp">
+      <Filter>DeviceCode\pal\OneWire</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\OneWire\Stubs\OneWireLinkLevelDriver_stubs.cpp">
       <Filter>DeviceCode\pal\OneWire\Stubs</Filter>
@@ -4211,11 +4136,11 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\piezo\piezo_fastcompile.cpp">
       <Filter>DeviceCode\pal\piezo</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\piezo\stubs\piezo_stubs.cpp">
-      <Filter>DeviceCode\pal\piezo\stubs</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\piezo\stubs\Config\piezo_config_stubs.cpp">
       <Filter>DeviceCode\pal\piezo\stubs\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\piezo\stubs\piezo_stubs.cpp">
+      <Filter>DeviceCode\pal\piezo\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\PKCS11\Cryptoki.cpp">
       <Filter>DeviceCode\pal\PKCS11</Filter>
@@ -4331,21 +4256,6 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\StateDebounce\stubs\StateDebounce_stubs.cpp">
       <Filter>DeviceCode\pal\StateDebounce\stubs</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\time\time_driver.cpp">
-      <Filter>DeviceCode\pal\time</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\time\time_functions.cpp">
-      <Filter>DeviceCode\pal\time</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\time\stubs\time_stubs.cpp">
-      <Filter>DeviceCode\pal\time\stubs</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\timeservice\timeservice_driver.cpp">
-      <Filter>DeviceCode\pal\timeservice</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\timeservice\timeservice_functions.cpp">
-      <Filter>DeviceCode\pal\timeservice</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\timeservice\driver\fastcompile_timeservice.cpp">
       <Filter>DeviceCode\pal\timeservice\driver</Filter>
     </ClCompile>
@@ -4358,11 +4268,29 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\timeservice\stubs\timeservice_stubs.cpp">
       <Filter>DeviceCode\pal\timeservice\stubs</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\tinycrt\tinycrt.cpp">
-      <Filter>DeviceCode\pal\tinycrt</Filter>
+    <ClCompile Include="..\..\..\DeviceCode\pal\timeservice\timeservice_driver.cpp">
+      <Filter>DeviceCode\pal\timeservice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\timeservice\timeservice_functions.cpp">
+      <Filter>DeviceCode\pal\timeservice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\time\stubs\time_stubs.cpp">
+      <Filter>DeviceCode\pal\time\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\time\time_driver.cpp">
+      <Filter>DeviceCode\pal\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\time\time_functions.cpp">
+      <Filter>DeviceCode\pal\time</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\tinycrt\stubs\tinycrt_stubs.cpp">
       <Filter>DeviceCode\pal\tinycrt\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\tinycrt\tinycrt.cpp">
+      <Filter>DeviceCode\pal\tinycrt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\pal\TouchPanel\stubs\touchpanel_stubs.cpp">
+      <Filter>DeviceCode\pal\TouchPanel\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\TouchPanel\touchpanel_driver.cpp">
       <Filter>DeviceCode\pal\TouchPanel</Filter>
@@ -4370,8 +4298,8 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\TouchPanel\touchpanel_functions.cpp">
       <Filter>DeviceCode\pal\TouchPanel</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\TouchPanel\stubs\touchpanel_stubs.cpp">
-      <Filter>DeviceCode\pal\TouchPanel\stubs</Filter>
+    <ClCompile Include="..\..\..\DeviceCode\pal\watchdog\stubs\Watchdog_stubs.cpp">
+      <Filter>DeviceCode\pal\watchdog\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\pal\watchdog\Watchdog_driver.cpp">
       <Filter>DeviceCode\pal\watchdog</Filter>
@@ -4379,8 +4307,32 @@
     <ClCompile Include="..\..\..\DeviceCode\pal\watchdog\Watchdog_functions.cpp">
       <Filter>DeviceCode\pal\watchdog</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\pal\watchdog\stubs\Watchdog_stubs.cpp">
-      <Filter>DeviceCode\pal\watchdog\stubs</Filter>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\STM32F7_bootstrap.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\STM32F7_Flash_driver.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO\STM32F7_GPIO_functions.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC\STM32F7_intc_functions.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_IntC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort\ItmPort.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_ItmPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\STM32F7_Power_functions.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time\STM32F7_time_functions.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART\STM32F7_usart_functions.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\STM32F7_usb_functions.cpp">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch\sys_arch.cpp">
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch</Filter>
@@ -4400,221 +4352,68 @@
     <ClCompile Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\sio.c">
       <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\sys_arch.cpp">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\timers.c">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\stubs\sys_arch_stubs.cpp">
       <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\stubs</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\stubs\timers_stubs.c">
       <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\stubs</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\sys_arch.cpp">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\timers.c">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Support\crc\CRC.cpp">
+      <Filter>Support\CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Support\crc\stdafx.cpp">
+      <Filter>Support\CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Support\WireProtocol\Compression.cpp">
+      <Filter>Support\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Support\WireProtocol\stdafx.cpp">
+      <Filter>Support\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Support\WireProtocol\WireProtocol.cpp">
+      <Filter>Support\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DeviceCode\Blockstorage\addDevices\Bl_addDevices.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\AddDevices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DeviceCode\Blockstorage\STM32F7\STM32F7_BlConfig.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Blockstorage\STM32F7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DeviceCode\Initialization\OEM_Model_SKU_NetworkID.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DeviceCode\Initialization\SystemState.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DeviceCode\Initialization\tinyhal.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DeviceCode\Init\IO_Init.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DeviceCode\USB\usb_config.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\USB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TinyBooter\allocator.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\TinyBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TinyBooter\TinyBooterEntry.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\TinyBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TinyCLR\allocator.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\TinyCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TinyCLR\tinyclr.cpp">
+      <Filter>Solutions\STM32F746NUCLEO\TinyCLR</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\processor_selector.h">
-      <Filter>DeviceCode\Targets\Native\STM32F7</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\stm32f7xx.h">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\stm32f746xx.h">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\system_stm32f7xx.h">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
-    </ClInclude>
-    <ClInclude Include="..\platform_selector.h">
-      <Filter>Solutions\STM32F746NUCLEO</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Analog_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\AnalogOut_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\AsyncProcCalls_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Backlight_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\BatteryCharger_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\BatteryMeasurement_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\BlockStorage_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\COM_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_BOOT_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_CACHE_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_CMU_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_DMA_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_EBIU_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_GPIO_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_INTC_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_MMU_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_PCU_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_SPI_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\CPU_WATCHDOG_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Display_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Double_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\drivers.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\events_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\FS_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Gesture_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\GPIO_button_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\graphics_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Heap_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\I2C_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Ink_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\instrumentation_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\io_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\LargeBuffer_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\MFUpdate_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\MicroBooter_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\netmf_errors.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Network_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\OSIrqLock.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\palevent_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\PerformanceCounters_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Piezo_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\power_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\PWM_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\SD_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Security_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\SmartPtr_irq.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Sockets_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\StateDebounce_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\tests.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\Time_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\TimeService_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\TinyBooterEntry.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\TinyCLR_Endian.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\tinycrt_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal_releaseinfo.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal_types.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\tinypal.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\TouchPanel_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\USART_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\USB_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\include\VirtualKey_decl.h">
-      <Filter>DeviceCode\Include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Application\TinyBooter\Commands.h">
       <Filter>Application\TinyBooter</Filter>
     </ClInclude>
@@ -4630,30 +4429,6 @@
     <ClInclude Include="..\..\..\Application\TinyBooter\TinyBooter.h">
       <Filter>Application\TinyBooter</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\STM32F7_Flash.h">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\STM32F7_Power_functions.h">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\usb_def.h">
-      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB</Filter>
-    </ClInclude>
-    <ClInclude Include="..\DeviceCode\Initialization\MasterConfig.h">
-      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Support\crc\stdafx.h">
-      <Filter>Support\CRC</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Support\Include\TinySupport.h">
-      <Filter>Support\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Support\Include\WireProtocol.h">
-      <Filter>Support\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Support\WireProtocol\stdafx.h">
-      <Filter>Support\WireProtocol</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\CLR\Core\Core.h">
       <Filter>CLR\Core</Filter>
     </ClInclude>
@@ -4665,9 +4440,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\CLR\Diagnostics\ManagedElementTypes_Win32.h">
       <Filter>CLR\Diagnostics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CLR\Graphics\Graphics.h">
-      <Filter>CLR\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\CLR\Graphics\Bmp\Bmp.h">
       <Filter>CLR\Graphics\Bmp</Filter>
@@ -4686,6 +4458,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\CLR\Graphics\Gif\lzwutil.h">
       <Filter>CLR\Graphics\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CLR\Graphics\Graphics.h">
+      <Filter>CLR\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\CLR\Graphics\Jpeg\jchuff.h">
       <Filter>CLR\Graphics\Jpeg</Filter>
@@ -4813,14 +4588,14 @@
     <ClInclude Include="..\..\..\CLR\Libraries\SPOT\SPOT.h">
       <Filter>CLR\Libraries\SPOT</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\SPOT_Messaging.h">
+      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\CLR\Libraries\SPOT\spot_native.h">
       <Filter>CLR\Libraries\SPOT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\CLR\Libraries\SPOT\spot_native_System_Security_Cryptography_X509Certificates_X509Certificate.h">
       <Filter>CLR\Libraries\SPOT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CLR\Libraries\SPOT\SPOT_Messaging\SPOT_Messaging.h">
-      <Filter>CLR\Libraries\SPOT\SPOT_Messaging</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\CLR\Libraries\SPOT\SPOT_Serialization\SPOT_Serialization.h">
       <Filter>CLR\Libraries\SPOT\SPOT_Serialization</Filter>
@@ -5002,6 +4777,9 @@
     <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\INC\RTX_CM_lib.h">
       <Filter>CMSIS\CMSIS\RTOS\RTX\INC</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\RTX_Config.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Event.h">
       <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
     </ClInclude>
@@ -5042,9 +4820,6 @@
       <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_TypeDef.h">
-      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\RTX_Config.h">
       <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\cmsis_generic.h">
@@ -5161,6 +4936,192 @@
     <ClInclude Include="..\..\..\DeviceCode\Drivers\TouchPanel\TSC2046\tsc2046_driver.h">
       <Filter>DeviceCode\Drivers\TouchPanel\TSC2046</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\AnalogOut_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Analog_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\AsyncProcCalls_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Backlight_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\BatteryCharger_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\BatteryMeasurement_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\BlockStorage_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\COM_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_BOOT_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_CACHE_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_CMU_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_DMA_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_EBIU_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_GPIO_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_INTC_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_MMU_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_PCU_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_SPI_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\CPU_WATCHDOG_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Display_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Double_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\drivers.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\events_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\FS_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Gesture_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\GPIO_button_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\graphics_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Heap_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\I2C_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Ink_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\instrumentation_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\io_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\LargeBuffer_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\MFUpdate_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\MicroBooter_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\netmf_errors.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Network_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\OSIrqLock.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\palevent_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\PerformanceCounters_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Piezo_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\power_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\PWM_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\SD_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Security_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\SmartPtr_irq.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Sockets_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\StateDebounce_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\tests.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\TimeService_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\Time_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\TinyBooterEntry.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\TinyCLR_Endian.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\tinycrt_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal_releaseinfo.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\tinyhal_types.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\tinypal.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\TouchPanel_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\USART_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\USB_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\include\VirtualKey_decl.h">
+      <Filter>DeviceCode\Include</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Initialization\MasterConfig.h">
       <Filter>DeviceCode\Initialization</Filter>
     </ClInclude>
@@ -5170,11 +5131,11 @@
     <ClInclude Include="..\..\..\DeviceCode\pal\COM\i2c\i2c.h">
       <Filter>DeviceCode\pal\COM\i2c</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\pal\COM\sockets\sockets.h">
-      <Filter>DeviceCode\pal\COM\sockets</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\pal\COM\sockets\openssl\openssl.h">
       <Filter>DeviceCode\pal\COM\sockets\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\pal\COM\sockets\sockets.h">
+      <Filter>DeviceCode\pal\COM\sockets</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\pal\COM\sockets_lwip_os\sockets_lwip.h">
       <Filter>DeviceCode\pal\COM\sockets_lwip_os</Filter>
@@ -5287,20 +5248,41 @@
     <ClInclude Include="..\..\..\DeviceCode\pal\SimpleStorage\SimpleStorage_decl.h">
       <Filter>DeviceCode\pal\SimpleStorage</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\pal\time\time_driver.h">
-      <Filter>DeviceCode\pal\time</Filter>
+    <ClInclude Include="..\..\..\DeviceCode\pal\timeservice\driver\ntp.h">
+      <Filter>DeviceCode\pal\timeservice\driver</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\pal\timeservice\timeservice_driver.h">
       <Filter>DeviceCode\pal\timeservice</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\pal\timeservice\driver\ntp.h">
-      <Filter>DeviceCode\pal\timeservice\driver</Filter>
+    <ClInclude Include="..\..\..\DeviceCode\pal\time\time_driver.h">
+      <Filter>DeviceCode\pal\time</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\pal\TouchPanel\touchpanel_driver.h">
       <Filter>DeviceCode\pal\TouchPanel</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\pal\watchdog\Watchdog_driver.h">
       <Filter>DeviceCode\pal\watchdog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\stm32f746xx.h">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\stm32f7xx.h">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\STM32F7_Flash.h">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power\STM32F7_Power_functions.h">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Power</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB\usb_def.h">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_USB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\system_stm32f7xx.h">
+      <Filter>DeviceCode\Targets\Native\STM32F7\DeviceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\processor_selector.h">
+      <Filter>DeviceCode\Targets\Native\STM32F7</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\cmsis_os_cpp.h">
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
@@ -5309,9 +5291,6 @@
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\CpuOsIrq.h">
-      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\processor_selector.h">
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch\cc.h">
@@ -5326,11 +5305,47 @@
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch\sys_arch.h">
       <Filter>DeviceCode\Targets\OS\CMSIS_RTOS\DeviceCode\lwip_1_4_1_os\arch</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\CMSIS_RTOS\processor_selector.h">
+      <Filter>DeviceCode\Targets\OS\CMSIS_RTOS</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\CpuOsIrq.h">
       <Filter>DeviceCode\Targets\OS\Win32</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\pcapif.h">
+      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\pcapif_helper.h">
+      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\WinPcap_Eth_lwIP_Adapter.h">
+      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\EnumFlags.h">
       <Filter>DeviceCode\Targets\OS\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\bpstruct.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\cc.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\epstruct.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\perf.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\sysarch_timeout.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\sys_arch.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\TimeoutQueue.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\Win32Timeouts.h">
+      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\NamedPipe.h">
       <Filter>DeviceCode\Targets\OS\Win32</Filter>
@@ -5359,44 +5374,29 @@
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\Win32_template_selector.h">
       <Filter>DeviceCode\Targets\OS\Win32</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\pcapif.h">
-      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\pcapif_helper.h">
-      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth\WinPcap_Eth_lwIP_Adapter.h">
-      <Filter>DeviceCode\Targets\OS\Win32\DeviceCode\WinPcap_Eth</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\bpstruct.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\cc.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\epstruct.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\perf.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\sysarch_timeout.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\sys_arch.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\TimeoutQueue.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch\Win32Timeouts.h">
-      <Filter>DeviceCode\Targets\OS\Win32\lwip_1_4_1_os\arch</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Windows\processor_selector.h">
       <Filter>DeviceCode\Targets\OS\Windows</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\DeviceCode\Targets\OS\Windows\Windows_template_selector.h">
       <Filter>DeviceCode\Targets\OS\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Support\crc\stdafx.h">
+      <Filter>Support\CRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Support\Include\TinySupport.h">
+      <Filter>Support\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Support\Include\WireProtocol.h">
+      <Filter>Support\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Support\WireProtocol\stdafx.h">
+      <Filter>Support\WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DeviceCode\Initialization\MasterConfig.h">
+      <Filter>Solutions\STM32F746NUCLEO\DeviceCode\Initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\platform_selector.h">
+      <Filter>Solutions\STM32F746NUCLEO</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
