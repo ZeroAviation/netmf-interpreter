@@ -1174,6 +1174,24 @@
     <None Include="Assets\OCDDebugger.xaml">
       <Filter>Assets</Filter>
     </None>
+    <None Include="..\..\..\crypto\stubs\crypto_stub.vcproj">
+      <Filter>Crypto\stubs</Filter>
+    </None>
+    <None Include="..\..\..\crypto\stubs\dotNetMF.proj">
+      <Filter>Crypto\stubs</Filter>
+    </None>
+    <None Include="..\..\..\crypto\build_crypto.cmd">
+      <Filter>Crypto</Filter>
+    </None>
+    <None Include="..\..\..\crypto\build_crypto.proj">
+      <Filter>Crypto</Filter>
+    </None>
+    <None Include="..\..\..\crypto\dotNetMF.proj">
+      <Filter>Crypto</Filter>
+    </None>
+    <None Include="..\..\..\crypto\readme.md">
+      <Filter>Crypto</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Application">
@@ -2201,6 +2219,15 @@
     </Filter>
     <Filter Include="Tools\Targets">
       <UniqueIdentifier>{ccb083ca-0dad-40a1-a0d6-992cac2a30e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypto">
+      <UniqueIdentifier>{06ff1f46-3d59-460d-a9e5-dc432060c763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypto\inc">
+      <UniqueIdentifier>{d18e2119-a25d-4011-abf7-303318e457f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypto\stubs">
+      <UniqueIdentifier>{2e136485-1e8e-46ee-becc-ae3b5fdbb8b8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -4412,6 +4439,9 @@
     <ClCompile Include="..\TinyCLR\tinyclr.cpp">
       <Filter>Solutions\STM32F746NUCLEO\TinyCLR</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\crypto\stubs\stubs.cpp">
+      <Filter>Crypto\stubs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Application\TinyBooter\Commands.h">
@@ -5397,6 +5427,9 @@
     </ClInclude>
     <ClInclude Include="..\platform_selector.h">
       <Filter>Solutions\STM32F746NUCLEO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\crypto\inc\crypto.h">
+      <Filter>Crypto\inc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

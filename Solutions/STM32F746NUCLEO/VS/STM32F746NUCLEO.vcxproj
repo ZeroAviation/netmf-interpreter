@@ -31,8 +31,10 @@
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings"></ImportGroup>
-  <ImportGroup Label="Shared"></ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\BuildEnv.props" />
@@ -147,6 +149,12 @@
     <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\HAL_CM4.s" />
     <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\SVC_Table.S" />
     <None Include="..\..\..\CMSIS\ReadMe.md" />
+    <None Include="..\..\..\crypto\build_crypto.cmd" />
+    <None Include="..\..\..\crypto\build_crypto.proj" />
+    <None Include="..\..\..\crypto\dotNetMF.proj" />
+    <None Include="..\..\..\crypto\readme.md" />
+    <None Include="..\..\..\crypto\stubs\crypto_stub.vcproj" />
+    <None Include="..\..\..\crypto\stubs\dotNetMF.proj" />
     <None Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\GlobalLock\dotNetMF.proj" />
     <None Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\ItmPort\dotNetMF.proj" />
     <None Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\TinyHal\dotNetMF.proj" />
@@ -884,6 +892,7 @@
     <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Task.c" />
     <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Time.c" />
     <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Timer.c" />
+    <ClCompile Include="..\..\..\crypto\stubs\stubs.cpp" />
     <ClCompile Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\GlobalLock\SmartPtr_cortex.cpp" />
     <ClCompile Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\ItmPort\ItmPort.cpp" />
     <ClCompile Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\TinyHal\Aborts.cpp" />
@@ -1352,6 +1361,7 @@
     <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Time.h" />
     <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Timer.h" />
     <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_TypeDef.h" />
+    <ClInclude Include="..\..\..\crypto\inc\crypto.h" />
     <ClInclude Include="..\..\..\DeviceCode\Cores\arm\Processors\CortexMx\cmsis_generic.h" />
     <ClInclude Include="..\..\..\DeviceCode\Drivers\Backlight\GPIO\gpio_backlight.h" />
     <ClInclude Include="..\..\..\DeviceCode\Drivers\Backlight\SPI\SPI_Backlight.h" />
@@ -1568,5 +1578,6 @@
     <IntDir>$(BUILD_ROOT_BASE)\</IntDir>
     <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Rebuild"</NMakeReBuildCommandLine>
   </PropertyGroup>
-  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
 </Project>
