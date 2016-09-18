@@ -1565,18 +1565,18 @@
   <!-- To Enable linux debugger End -->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <NMakeBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR)"</NMakeBuildCommandLine>
+    <NMakeBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=Debug"</NMakeBuildCommandLine>
     <OutDir>$(BUILD_ROOT_BASE)\</OutDir>
     <IntDir>$(BUILD_ROOT_BASE)\</IntDir>
-    <NMakeCleanCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Clean"</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Rebuild"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=Debug /t:Clean"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=Debug /t:Rebuild"</NMakeReBuildCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <NMakeBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR)"</NMakeBuildCommandLine>
-    <NMakeCleanCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Clean"</NMakeCleanCommandLine>
+    <NMakeBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=Release"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=Release /t:Clean"</NMakeCleanCommandLine>
     <OutDir>$(BUILD_ROOT_BASE)\</OutDir>
     <IntDir>$(BUILD_ROOT_BASE)\</IntDir>
-    <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Rebuild"</NMakeReBuildCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=Release /t:Rebuild"</NMakeReBuildCommandLine>
   </PropertyGroup>
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
