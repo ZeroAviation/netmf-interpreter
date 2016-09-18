@@ -53,6 +53,10 @@
     <None Include="..\..\..\Application\TinyBooter\dotNetMF.proj" />
     <None Include="..\..\..\Application\TinyBooter\TinyBooterDecompressorLib.proj" />
     <None Include="..\..\..\Application\TinyBooter\TinyBooterLib.proj" />
+    <None Include="..\..\..\build.dirproj" />
+    <None Include="..\..\..\BuildEnv.props" />
+    <None Include="..\..\..\build_sdk.cmd" />
+    <None Include="..\..\..\build_solution.cmd" />
     <None Include="..\..\..\CLR\build.dirproj" />
     <None Include="..\..\..\CLR\Core\dotNetMF.proj" />
     <None Include="..\..\..\CLR\Core\Hardware\dotNetMF.proj" />
@@ -412,6 +416,19 @@
     <None Include="..\..\..\DeviceCode\Targets\OS\Win32\Win32.settings" />
     <None Include="..\..\..\DeviceCode\Targets\OS\Windows\dotNetMF.proj" />
     <None Include="..\..\..\DeviceCode\Targets\OS\Windows\Windows.settings" />
+    <None Include="..\..\..\dotNetMF.proj" />
+    <None Include="..\..\..\Install-BinTools.ps1" />
+    <None Include="..\..\..\Install-CMSIS.ps1" />
+    <None Include="..\..\..\PK.proj" />
+    <None Include="..\..\..\README.md" />
+    <None Include="..\..\..\ReleaseInfo.settings" />
+    <None Include="..\..\..\run_tests.cmd" />
+    <None Include="..\..\..\sdk.dirproj" />
+    <None Include="..\..\..\setenv_base.cmd" />
+    <None Include="..\..\..\setenv_gcc.cmd" />
+    <None Include="..\..\..\setenv_mdk.cmd" />
+    <None Include="..\..\..\setenv_vs.cmd" />
+    <None Include="..\..\..\std_vcxproj.props" />
     <None Include="..\..\..\Support\crc\crc.vcproj" />
     <None Include="..\..\..\Support\crc\dotNetMF.proj" />
     <None Include="..\..\..\Support\CreateMfPkVersionProj.proj" />
@@ -428,6 +445,7 @@
     <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.gcc.targets" />
     <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.settings" />
     <None Include="..\..\..\tools\Targets\Microsoft.Spot.system.mdk.targets" />
+    <None Include="..\..\..\Update-DeviceSdkAssembly.ps1" />
     <None Include="..\DeviceCode\Blockstorage\addDevices\dotNetMF.proj" />
     <None Include="..\DeviceCode\Blockstorage\dotNetMF.proj" />
     <None Include="..\DeviceCode\Blockstorage\STM32F7\dotNetMF.proj" />
@@ -446,6 +464,11 @@
     <None Include="Assets\linux_nmake.xaml" />
     <None Include="Assets\LocalDebugger.xaml" />
     <None Include="Assets\OCDDebugger.xaml" />
+    <None Include="build.cmd" />
+    <None Include="build.props" />
+    <None Include="build.props.user" />
+    <None Include="build.props.user-example" />
+    <None Include="ReadMe.md" />
   </ItemGroup>
   <!--Import Project="$(MSBuildThisFileDirectory)\Microsoft.cpp.Linux.targets" /-->
   <!-- To Enable linux debugger -->
@@ -1561,6 +1584,10 @@
     <Xml Include="..\TinyBooter\scatterfile_bootloader_mdk.xml" />
     <Xml Include="..\TinyCLR\scatterfile_tinyclr_gcc.xml" />
     <Xml Include="..\TinyCLR\scatterfile_tinyclr_mdk.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\License.txt" />
+    <Text Include="..\..\..\mscorlibtests.txt" />
   </ItemGroup>
   <!-- To Enable linux debugger End -->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

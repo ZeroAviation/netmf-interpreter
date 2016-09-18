@@ -1163,16 +1163,16 @@
       <Filter>Solutions\STM32F746NUCLEO</Filter>
     </None>
     <None Include="Assets\LinuxDebugger.xaml">
-      <Filter>Assets</Filter>
+      <Filter>Solutions\STM32F746NUCLEO\VS\Assets</Filter>
     </None>
     <None Include="Assets\linux_nmake.xaml">
-      <Filter>Assets</Filter>
+      <Filter>Solutions\STM32F746NUCLEO\VS\Assets</Filter>
     </None>
     <None Include="Assets\LocalDebugger.xaml">
-      <Filter>Assets</Filter>
+      <Filter>Solutions\STM32F746NUCLEO\VS\Assets</Filter>
     </None>
     <None Include="Assets\OCDDebugger.xaml">
-      <Filter>Assets</Filter>
+      <Filter>Solutions\STM32F746NUCLEO\VS\Assets</Filter>
     </None>
     <None Include="..\..\..\crypto\stubs\crypto_stub.vcproj">
       <Filter>Crypto\stubs</Filter>
@@ -1192,6 +1192,39 @@
     <None Include="..\..\..\crypto\readme.md">
       <Filter>Crypto</Filter>
     </None>
+    <None Include="..\..\..\build.dirproj" />
+    <None Include="..\..\..\build_sdk.cmd" />
+    <None Include="..\..\..\build_solution.cmd" />
+    <None Include="..\..\..\BuildEnv.props" />
+    <None Include="..\..\..\dotNetMF.proj" />
+    <None Include="..\..\..\Install-BinTools.ps1" />
+    <None Include="..\..\..\Install-CMSIS.ps1" />
+    <None Include="..\..\..\PK.proj" />
+    <None Include="..\..\..\README.md" />
+    <None Include="..\..\..\ReleaseInfo.settings" />
+    <None Include="..\..\..\run_tests.cmd" />
+    <None Include="..\..\..\sdk.dirproj" />
+    <None Include="..\..\..\setenv_base.cmd" />
+    <None Include="..\..\..\setenv_gcc.cmd" />
+    <None Include="..\..\..\setenv_mdk.cmd" />
+    <None Include="..\..\..\setenv_vs.cmd" />
+    <None Include="..\..\..\std_vcxproj.props" />
+    <None Include="..\..\..\Update-DeviceSdkAssembly.ps1" />
+    <None Include="build.cmd">
+      <Filter>Solutions\STM32F746NUCLEO\VS</Filter>
+    </None>
+    <None Include="build.props">
+      <Filter>Solutions\STM32F746NUCLEO\VS</Filter>
+    </None>
+    <None Include="build.props.user">
+      <Filter>Solutions\STM32F746NUCLEO\VS</Filter>
+    </None>
+    <None Include="build.props.user-example">
+      <Filter>Solutions\STM32F746NUCLEO\VS</Filter>
+    </None>
+    <None Include="ReadMe.md">
+      <Filter>Solutions\STM32F746NUCLEO\VS</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Application">
@@ -1199,9 +1232,6 @@
     </Filter>
     <Filter Include="Application\TinyBooter">
       <UniqueIdentifier>{7a3fc137-b0f7-400f-97ce-306fcbc2e162}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Assets">
-      <UniqueIdentifier>{08a26e93-524c-4982-a01c-c8d4f223d6be}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLR">
       <UniqueIdentifier>{268cd214-6a9b-4648-8c9f-5ed2bb0cfed8}</UniqueIdentifier>
@@ -2228,6 +2258,12 @@
     </Filter>
     <Filter Include="Crypto\stubs">
       <UniqueIdentifier>{2e136485-1e8e-46ee-becc-ae3b5fdbb8b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\VS">
+      <UniqueIdentifier>{9735223c-7def-492e-8651-4be082a39272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions\STM32F746NUCLEO\VS\Assets">
+      <UniqueIdentifier>{08a26e93-524c-4982-a01c-c8d4f223d6be}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -5448,5 +5484,9 @@
     <Xml Include="..\TinyCLR\scatterfile_tinyclr_mdk.xml">
       <Filter>Solutions\STM32F746NUCLEO\TinyCLR</Filter>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\License.txt" />
+    <Text Include="..\..\..\mscorlibtests.txt" />
   </ItemGroup>
 </Project>
