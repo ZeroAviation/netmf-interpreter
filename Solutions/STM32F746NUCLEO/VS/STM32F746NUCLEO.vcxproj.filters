@@ -424,6 +424,30 @@
     <None Include="..\..\..\CLR\Tools\StubWinHal\dotNetMF.proj">
       <Filter>CLR\Tools\StubWinHal</Filter>
     </None>
+    <None Include="..\..\..\CMSIS\ReadMe.md">
+      <Filter>CMSIS</Filter>
+    </None>
+    <None Include="..\..\..\CMSIS\ARM.CMSIS.pdsc">
+      <Filter>CMSIS</Filter>
+    </None>
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\dotNetMF.proj">
+      <Filter>CMSIS\CMSIS\RTOS\RTX</Filter>
+    </None>
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
+    </None>
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\HAL_CM0.s">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\GCC</Filter>
+    </None>
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\HAL_CM3.s">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\GCC</Filter>
+    </None>
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\HAL_CM4.s">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\GCC</Filter>
+    </None>
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\SVC_Table.S">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\GCC</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Assets">
@@ -716,6 +740,30 @@
     </Filter>
     <Filter Include="CLR\Tools\TFConvert\Fonts\TrueType">
       <UniqueIdentifier>{073c55a9-b32a-4f47-a925-e8591b7838e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS">
+      <UniqueIdentifier>{2468e70c-6ae5-46e3-b4c4-fdda6d388b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS\Include">
+      <UniqueIdentifier>{ed1a361d-e64d-420b-9ea1-dbd2c2641607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS\RTOS">
+      <UniqueIdentifier>{37efd2a3-4a21-4a67-8bfe-1db9c074fd91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS\RTOS\RTX">
+      <UniqueIdentifier>{9b2e7ac0-73a7-49fd-8aa1-c62ed4632b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS\RTOS\RTX\INC">
+      <UniqueIdentifier>{953f6fba-a773-46fe-a32b-d14333497f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS\RTOS\RTX\SRC">
+      <UniqueIdentifier>{dcb1ffad-75f6-464e-8fa1-af172a4ee4d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS\RTOS\RTX\SRC\ARM">
+      <UniqueIdentifier>{2d8b2de3-be64-4552-845e-9ce94e0adebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS\CMSIS\RTOS\RTX\SRC\GCC">
+      <UniqueIdentifier>{f404cde9-f215-4d63-be21-8f424fbd1f05}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -1961,6 +2009,57 @@
     <ClCompile Include="..\..\..\CLR\Tools\StubWinHal\StubWinHal.cpp">
       <Filter>CLR\Tools\StubWinHal</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\HAL_CM.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_CMSIS.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Event.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_List.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mailbox.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_MemBox.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Memory.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mutex.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Robin.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Semaphore.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_System.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Task.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Time.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Timer.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM0.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM3.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM4.c">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC\ARM</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\DeviceCode\Targets\Native\STM32F7\processor_selector.h">
@@ -2505,6 +2604,96 @@
     </ClInclude>
     <ClInclude Include="..\..\..\CLR\Tools\StubWinHal\stdafx.h">
       <Filter>CLR\Tools\StubWinHal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\arm_common_tables.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\arm_const_structs.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\arm_math.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm0.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm0plus.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm3.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm4.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm7.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cmFunc.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cmInstr.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cmSimd.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_sc000.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_sc300.h">
+      <Filter>CMSIS\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\INC\cmsis_os.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\INC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\INC\RTX_CM_lib.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\INC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Event.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_HAL_CM.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_List.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mailbox.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_MemBox.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Memory.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mutex.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Robin.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Semaphore.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_System.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Task.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Time.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Timer.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_TypeDef.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\RTX_Config.h">
+      <Filter>CMSIS\CMSIS\RTOS\RTX\SRC</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

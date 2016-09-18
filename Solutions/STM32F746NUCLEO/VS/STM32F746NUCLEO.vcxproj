@@ -31,8 +31,10 @@
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings"></ImportGroup>
-  <ImportGroup Label="Shared"></ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\BuildEnv.props" />
@@ -51,6 +53,14 @@
     <None Include="..\..\..\Application\TinyBooter\dotNetMF.proj" />
     <None Include="..\..\..\Application\TinyBooter\TinyBooterDecompressorLib.proj" />
     <None Include="..\..\..\Application\TinyBooter\TinyBooterLib.proj" />
+    <None Include="..\..\..\CMSIS\ARM.CMSIS.pdsc" />
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\dotNetMF.proj" />
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s" />
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\HAL_CM0.s" />
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\HAL_CM3.s" />
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\HAL_CM4.s" />
+    <None Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\GCC\SVC_Table.S" />
+    <None Include="..\..\..\CMSIS\ReadMe.md" />
     <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\dotNetMF.proj" />
     <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\dotNetMF.proj" />
     <None Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\GNU_S\DefaultHandlers.s" />
@@ -233,6 +243,23 @@
     <ClCompile Include="..\..\..\Application\TinyBooter\CryptoInterface.cpp" />
     <ClCompile Include="..\..\..\Application\TinyBooter\TinyBooter.cpp" />
     <ClCompile Include="..\..\..\Application\TinyBooter\TinyBooterDecompressor.cpp" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM0.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM3.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\ARM\HAL_CM4.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\HAL_CM.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_CMSIS.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Event.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_List.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mailbox.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_MemBox.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Memory.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mutex.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Robin.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Semaphore.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_System.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Task.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Time.c" />
+    <ClCompile Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Timer.c" />
     <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F746_Bootstrap\STM32F7_bootstrap.cpp" />
     <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_Flash\STM32F7_Flash_driver.cpp" />
     <ClCompile Include="..\..\..\DeviceCode\Targets\Native\STM32F7\DeviceCode\STM32F7_GPIO\STM32F7_GPIO_functions.cpp" />
@@ -649,6 +676,36 @@
     <ClInclude Include="..\..\..\Application\TinyBooter\CryptoInterface.h" />
     <ClInclude Include="..\..\..\Application\TinyBooter\Keys.h" />
     <ClInclude Include="..\..\..\Application\TinyBooter\TinyBooter.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\arm_common_tables.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\arm_const_structs.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\arm_math.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm0.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm0plus.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm3.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm4.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cm7.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cmFunc.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_cmSimd.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_sc000.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\Include\core_sc300.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\INC\cmsis_os.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\INC\RTX_CM_lib.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\RTX_Config.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Event.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_HAL_CM.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_List.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mailbox.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_MemBox.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Memory.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Mutex.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Robin.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Semaphore.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_System.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Task.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Time.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_Timer.h" />
+    <ClInclude Include="..\..\..\CMSIS\CMSIS\RTOS\RTX\SRC\rt_TypeDef.h" />
     <ClInclude Include="..\..\..\DeviceCode\include\AnalogOut_decl.h" />
     <ClInclude Include="..\..\..\DeviceCode\include\Analog_decl.h" />
     <ClInclude Include="..\..\..\DeviceCode\include\AsyncProcCalls_decl.h" />
@@ -849,5 +906,6 @@
     <IntDir>$(BUILD_ROOT_BASE)\</IntDir>
     <NMakeReBuildCommandLine>$(SolutionDir)build.cmd $(SPOCLIENT) $(SolutionName) "/p:Flavor=$(FLAVOR) /t:Rebuild"</NMakeReBuildCommandLine>
   </PropertyGroup>
-  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
 </Project>
