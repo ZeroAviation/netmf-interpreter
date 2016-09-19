@@ -7,7 +7,7 @@ Nucleo board.
 ### Prerequisites
 
 1. [Visual Studio 2015 Community](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx) or higher edition,
-2. [Visual C++ for IOT Development](https://visualstudiogallery.msdn.microsoft.com/35dbae07-8c1a-4f9d-94b7-bac16cad9c01) extension,
+2. [Visual C++ for IoT Development](https://visualstudiogallery.msdn.microsoft.com/35dbae07-8c1a-4f9d-94b7-bac16cad9c01) extension,
 3. [GNU ARM Embedded Toolchain](https://launchpad.net/gcc-arm-embedded) (5.4.1 at the time of writing),
 4. OpenOCD debugger - prebuilt binaries with STM32F7 support available at Freddie Chopin's [OpenOCD dev](http://www.freddiechopin.info/en/download/category/10-openocd-dev)
 
