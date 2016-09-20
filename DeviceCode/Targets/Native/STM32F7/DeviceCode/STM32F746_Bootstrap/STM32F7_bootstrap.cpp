@@ -244,7 +244,7 @@ void __section("SectionForBootstrapOperations") STM32F7_BootstrapCode()
     SCB->CPACR |= 0x3 << 2 * 10 | 0x3 << 2 * 11; // full access
 
     // Allow debugging in Sleep mode
-    DBGMCU->CR = DBGMCU_CR_DBG_SLEEP;
+    DBGMCU->CR |= DBGMCU_CR_DBG_SLEEP;
 
     // allow unaligned memory access (Cortex-M7 has STKALIGN read-only)
     SCB->CCR &= ~SCB_CCR_UNALIGN_TRP_Msk;
